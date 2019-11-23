@@ -1,0 +1,18 @@
+.catalog {
+  margin: 0px;
+}
+
+.catalog__title {
+  @include title-style-none();
+  font-size: 36px;
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.catalog__list {
+  margin: 0;
+}
+
+.catalog__more-product {
+  margin: 0px;
+}

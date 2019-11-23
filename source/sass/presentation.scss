@@ -1,0 +1,39 @@
+.presentation {
+  margin-top: 18px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding-top: 17px;
+}
+
+.presentation__title {
+  @include title-style-none();
+  font-size: 36px;
+  line-height: 60px;
+  margin-left: 18px
+}
+
+.presentation__desc {
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 18px;
+  margin-top: 23px;
+  padding-right: 30px;
+}
+
+.presentation__result {
+  margin-left: 20px;
+}
+
+.presentation__cost {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+.presentation__slider {
+  margin: 0;
+}

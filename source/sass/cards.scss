@@ -1,0 +1,12 @@
+.cards {
+  @include list-style-none();
+}
+
+.cards__item {
+  box-sizing: border-box;
+  border-top: 1px solid #e6e6e6;
+}
+
+.cards__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}

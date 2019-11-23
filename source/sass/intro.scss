@@ -1,0 +1,32 @@
+.intro {
+  color: #fff;
+  font-family: "Oswald", "Arial", sans-serif;
+  height: 453px;
+  background-image: url("../img/intro-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 27px;
+}
+
+
+.intro__title {
+  @include title-style-none();
+  text-transform: none;
+  font-size: 36px;
+  line-height: 36px;
+  margin-left: 38px;
+}
+
+.intro__desc {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 25px;
+  margin-left: 59px;
+}
+
+.intro__link {
+  margin-top: auto;
+}

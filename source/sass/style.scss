@@ -1,4 +1,20 @@
-body { background: red; }
-body {
-  background: red;
-}
+@import "global";
+@import "container";
+@import "btn";
+@import "header";
+@import "main-navigation";
+@import "site-list";
+@import "intro";
+@import "category";
+@import "advantages";
+@import "presentation";
+@import "result";
+@import "slider";
+@import "contacts";
+@import "footer";
+@import "logo";
+@import "social";
+/*страница каталог*/
+@import "catalog";
+@import "cards";
+@import "card";

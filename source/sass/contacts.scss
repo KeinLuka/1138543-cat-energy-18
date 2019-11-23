@@ -1,0 +1,41 @@
+.contacts {
+  padding: 1px;
+}
+
+.contacts__desc {
+  padding: 0px;
+}
+
+.contacts__desc--main {
+  width: 280px;
+  padding: 27px 0 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__invitation {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 140px;
+}
+
+.contacts__wrapper {
+  width: 140px;
+}
+
+.contacts__adress,
+.contacts__city {
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.contacts__map {
+  width: 100%;
+  min-height: 360px;
+}
