@@ -1,9 +1,9 @@
 .intro {
   color: #fff;
   font-family: "Oswald", "Arial", sans-serif;
-  height: 453px;
+  min-height: 453px;
   background-image: url("../img/intro-mobile.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 27px;
 }

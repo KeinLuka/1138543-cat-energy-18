@@ -1,0 +1,15 @@
+.additional-product {
+  border-top: 1px solid #f2f2f2;
+}
+
+.additional-product__title {
+  @include title-style-none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional-product__price {
+  font-size: 14px;
+  line-height: 14px;
+}

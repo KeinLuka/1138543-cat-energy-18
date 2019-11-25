@@ -9,24 +9,15 @@
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 body {
   margin: 0;
-
-}
-
-@mixin list-style-none {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin title-style-none {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
 }

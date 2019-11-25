@@ -1,0 +1,10 @@
+.catalog__title {
+  @include title-style-none;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.catalog__more-product {
+  margin: 0px;
+}

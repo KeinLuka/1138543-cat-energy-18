@@ -1,13 +1,9 @@
-.contacts {
-  padding: 1px;
-}
-
 .contacts__desc {
   padding: 0px;
 }
 
-.contacts__desc--main {
-  width: 280px;
+.contacts__desc--main,
+.contacts__desc--catalog {
   padding: 27px 0 24px 0;
   display: flex;
   flex-wrap: wrap;

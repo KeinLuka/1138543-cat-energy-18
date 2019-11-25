@@ -1,0 +1,9 @@
+.extra__title {
+  @include title-style-none;
+  font-weight: normal;
+}
+
+.extra__list {
+  @include list-style-none;
+}
+
