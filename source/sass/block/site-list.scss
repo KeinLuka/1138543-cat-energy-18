@@ -3,6 +3,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  width: 100%;
 }
 
 .site-list__item {
@@ -20,4 +21,5 @@
 .site-list__link {
   padding: 25px 10px;
   color: #000;
+  text-decoration: none;
 }

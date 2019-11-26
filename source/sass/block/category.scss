@@ -1,10 +1,9 @@
 .category {
-  margin-top: 22px;
   display: block;
 }
 
 .category__list {
-  @include list-style-none();
+  @include list-style-none;
 }
 
 .category__item {
@@ -15,16 +14,15 @@
 
 .category__wrapper {
   border-bottom: 1px solid #e6e6e6;
-  padding-right: 14px;
 }
 
 .category__title {
-  @include title-style-none();
+  @include title-style-none;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
   text-align: center;
-  margin: 0 0 29px;
+  padding-bottom: 29px;
 }
 
 .category__slim {
@@ -49,4 +47,5 @@
   font-size: 16px;
   padding: 10px 10px 10px 0;
   margin-top: 10px;
+  justify-content: left;
 }

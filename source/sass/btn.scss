@@ -4,7 +4,9 @@
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn--green {

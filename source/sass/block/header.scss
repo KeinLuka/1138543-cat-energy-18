@@ -1,5 +1,12 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .header__logo {
-  margin: 1px;
+  height: 25px;
+  width: 110px;
 }
 
 .header__navigation {

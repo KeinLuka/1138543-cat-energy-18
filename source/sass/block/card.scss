@@ -1,9 +1,12 @@
 .card {
   padding: 26px 0 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card__wrapper {
-  width: 280px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -41,4 +44,6 @@
 
 .card__link {
   margin: 24px;
+  min-width: 240px;
+  height: 40px;
 }

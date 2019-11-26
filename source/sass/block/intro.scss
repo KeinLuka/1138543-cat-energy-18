@@ -1,20 +1,32 @@
 .intro {
   color: #fff;
   font-family: "Oswald", "Arial", sans-serif;
-  min-height: 453px;
-  background-image: url("../img/intro-mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 22px;
 }
 
+.intro__wrapper {
+  background-image: url("../img/intro-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #64a83b;
+  min-height:305px;
+}
+
+.intro__wrapper-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .intro__title {
-  @include title-style-none();
-  text-transform: none;
+  @include title-style-none;
   font-size: 36px;
   line-height: 36px;
-  margin-left: 38px;
+  text-align: center;
+  margin-top: 28px;
 }
 
 .intro__desc {
@@ -23,10 +35,11 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  margin-top: 25px;
-  margin-left: 59px;
+  margin-top: 22px;
 }
 
 .intro__link {
-  margin-top: auto;
+  margin-top: 107px;
+  min-width: 280px;
+  height: 40px;
 }

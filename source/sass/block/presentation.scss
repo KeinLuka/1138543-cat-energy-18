@@ -1,9 +1,9 @@
 .presentation {
-  margin-top: 18px;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding-top: 17px;
+  padding-top: 35px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .presentation__title {
@@ -19,7 +19,6 @@
   line-height: 18px;
   margin-left: 18px;
   margin-top: 23px;
-  padding-right: 30px;
 }
 
 .presentation__result {
@@ -37,4 +36,7 @@
 
 .presentation__slider {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
