@@ -5,17 +5,12 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 22px;
+  background: url("../img/intro-mobile.png"), linear-gradient(to bottom ,#64a83b 0%, #64a83b 61.5%, #fff 61.5% ) ;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .intro__wrapper {
-  background-image: url("../img/intro-mobile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #64a83b;
-  min-height:305px;
-}
-
-.intro__wrapper-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,7 +34,7 @@
 }
 
 .intro__link {
-  margin-top: 107px;
+  margin-top: 302px;
   min-width: 280px;
   height: 40px;
 }
