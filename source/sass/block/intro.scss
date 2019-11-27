@@ -1,0 +1,40 @@
+.intro {
+  color: #fff;
+  font-family: "Oswald", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 22px;
+  background: url("../img/intro-mobile.png"), linear-gradient(to bottom ,#64a83b 0%, #64a83b 61.5%, #fff 61.5% ) ;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro__title {
+  @include title-style-none;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.intro__desc {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 22px;
+}
+
+.intro__link {
+  margin-top: 302px;
+  min-width: 280px;
+  height: 40px;
+}

@@ -3,17 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/Oswald-Regular.woff" as="font" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <a href="#" class="header__logo logo logo--header" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+        <img class="logo__img" src="https://via.placeholder.com/150x150" width="110" height="25"
           alt="Логотип Cat energy">
       </a>
-      <nav class="header__navigation main-navigation">
+      <nav class="header-navigation main-navigation">
         <button class="header-navigation__button header-navigation__button--close" type="button"
           aria-label="Открыть меню"></button>
         <ul class="main-navigation__list site-list">
@@ -25,154 +29,182 @@
     </div>
   </header>
   <main class="main main--catalog">
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list cards">
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy PRO 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>500г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Курица</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>700р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="143" height="143">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy PRO 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">500г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Курица</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">700р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy PRO 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>1000г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Курица</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>1000р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy PRO 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">1000г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Курица</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">1000р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy PRO 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>500г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Рыба</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>700р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy PRO 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">500г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Рыба</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">700р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy PRO 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>1000г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Рыба</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>1000р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy PRO 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">1000г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Рыба</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">1000р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy Slim 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>500г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Гречка</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>400р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy Slim 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">500г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Гречка</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">400р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy Slim 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>1000г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Гречка</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>700р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy Slim 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">1000г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Гречка</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">700р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
         <li class="cards__item card">
-          <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
-          <h2 class="card__title">
-            Cat Energy Slim 500 г
-          </h2>
-          <table class="card__table">
-            <tr>
-              <td>Обьем</td>
-              <td>500г</td>
-            </tr>
-            <tr>
-              <td>Вкус</td>
-              <td>Рис</td>
-            </tr>
-            <tr>
-              <td>Цена</td>
-              <td>500р</td>
-            </tr>
-          </table>
+          <div class="card__wrapper">
+            <img class="card__img" src="https://via.placeholder.com/150x150" alt="Товар" width="150" height="150">
+            <div class="card__wrapper-table">
+              <h2 class="card__title">
+                Cat Energy Slim 500 г
+              </h2>
+              <table class="card__table">
+                <tr>
+                  <td>Обьем</td>
+                  <td class="card__rigth">500г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="card__rigth">Рис</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="card__rigth">500р</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <a href="#" class="card__link btn btn--green">Заказать</a>
         </li>
       </ul>
@@ -244,9 +276,9 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <a href="#" class="footer__logo logo logo--footer" aria-label="Логотип">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+    <div class="footer__wrapper container">
+      <a href="#" class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
+        <img class="logo__img" src="https://via.placeholder.com/150x150" width="144" height="38"
           alt="Логотип Cat energy">
       </a>
       <ul class="footer__social social">
@@ -256,9 +288,9 @@
         <li class="social__item"><a href="#" class="social__link social__link--fb" aria-label="Ссылка на фейсбук"></a>
         </li>
       </ul>
-      <div class="footer__academy Academy">
-        <a href="https://htmlacademy.ru/" class="Academy__link">HTML Academy</a>
-        <a href="mailto:mail@htmlacademy.ru" class="Academy__mail" aria-label="Почта HTML Academy"></a>
+      <div class="footer__academy">
+        <a href="https://htmlacademy.ru/" class="footer__academy--link">HTML Academy</a>
+        <a href="mailto:mail@htmlacademy.ru" class="footer__academy--mail" aria-label="Почта HTML Academy"></a>
       </div>
     </div>
   </footer>

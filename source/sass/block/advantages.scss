@@ -1,0 +1,24 @@
+.advantages__title {
+  @include title-style-none();
+  font-size: 36px;
+}
+
+.advantages__list {
+  @include list-style-none();
+  padding:0 20px 1px 20px;
+  margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.advantages__item {
+  padding-left: 60px;
+  margin-bottom: 26px;
+}
+
+.advantages__desc {
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+

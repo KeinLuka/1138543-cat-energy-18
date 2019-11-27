@@ -1,0 +1,25 @@
+.site-list {
+  @include list-style-none();
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.site-list__item {
+  margin: 1px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px 10px;
+  border-top: 1px solid #e6e6e6 ;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid #e6e6e6 ;
+}
+
+.site-list__link {
+  padding: 25px 10px;
+  color: #000;
+  text-decoration: none;
+}

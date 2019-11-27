@@ -1,0 +1,28 @@
+.additional-product {
+  border-top: 1px solid #f2f2f2;
+}
+
+.additional-product:last-child {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.additional-product__title {
+  @include title-style-none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional-product__price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-product__link {
+  min-width: 240px;
+  height: 40px;
+}

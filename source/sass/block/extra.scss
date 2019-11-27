@@ -1,0 +1,23 @@
+.extra {
+  padding-top: 33px;
+  box-sizing: border-box;
+}
+
+.extra__title {
+  @include title-style-none;
+  font-weight: normal;
+}
+
+.extra__list {
+  @include list-style-none;
+}
+
+.extra__item {
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+.extra__gift {
+  margin-top: 39px;
+}

@@ -1,0 +1,11 @@
+@mixin list-style-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin title-style-none {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}

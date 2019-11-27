@@ -3,40 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/Oswald-Regular.woff" as="font" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="#" class="header__logo logo logo--header" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
-          alt="Логотип Cat energy">
-      </a>
-      <nav class="header__navigation main-navigation">
-        <button class="header-navigation__button header-navigation__button--close" type="button"
-          aria-label="Открыть меню"></button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header container">
+    <a href="#" class="header__logo logo logo--header" aria-label="Компания Cat energy">
+      <img class="logo__img" src="https://via.placeholder.com/150x150" width="110" height="25" alt="Логотип Cat energy">
+    </a>
+    <nav class="header-navigation main-navigation">
+      <button class="header-navigation__button header-navigation__button--close" type="button"
+        aria-label="Открыть меню"></button>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="main main--index">
     <h1 class="visually-hidden">Интернет магазин Cat energy</h1>
     <section class="intro">
-      <h2 class="intro__title">Функциональное
-        питание для котов</h2>
-      <p class="intro__desc">Занялся собой? Займись котом!</p>
+      <div class="intro__wrapper container">
+          <h2 class="intro__title">Функциональное
+            питание для котов</h2>
+          <p class="intro__desc">Занялся собой? Займись котом!</p>
+      </div>
       <a href="#" class="intro__link btn btn--green">Подобрать программу</a>
     </section>
     <section class="category container">
       <ul class="category__list">
         <li class="category__item">
           <div class="category__wrapper">
-            <h2 class="category__tittle">Похудение</h2>
+            <h2 class="category__title"><span class="category__slim">Похудение</span></h2>
             <p class="category__desc">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
@@ -46,7 +49,7 @@
         </li>
         <li class="category__item">
           <div class="category__wrapper">
-            <h2 class="category__tittle">Набор массы</h2>
+            <h2 class="category__title"><span class="category__set">Набор массы</span></h2>
             <p class="category__desc">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -82,20 +85,37 @@
       </ul>
     </section>
     <section class="presentation">
-      <h2 class="presentation__title">Живой пример</h2>
-      <p class="presentation__desc">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <div class="presentation__result result">
-        <div class="result__wrapper">
-          <p class="result__weight">5кг</p>
-          <p class="result__desc">Снижение веса</p>
+      <div class="container">
+        <h2 class="presentation__title">Живой пример</h2>
+        <p class="presentation__desc">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="presentation__result result">
+          <div class="result__wrapper">
+            <p class="result__weight">5 кг</p>
+            <p class="result__desc">Снижение веса</p>
+          </div>
+          <div class="result__wrapper">
+            <p class="result__time">60 дней</p>
+            <p class="result__desc">Затрачено времени</p>
+          </div>
         </div>
-        <div class="result__wrapper">
-          <p class="result__time">60 дней</p>
-          <p class="result__desc">Затрачено времени</p>
-        </div>
+<<<<<<< HEAD
+        <p class="presentation__cost">Затраты на питание: 15000 руб.</p>
+        <div class="presentation__slider slider">
+          <div class="slider__slide slider__slide--before"><img src="https://via.placeholder.com/150x150" width="280"
+              height="232" alt="До использования корма"></div>
+          <div class="slider__slide slider__slide--after visually-hidden"><img src="https://via.placeholder.com/150x150"
+              width="251" height="240" alt="После использования корма"></div>
+          <div class="slider__controls">
+            <p class="slider__text slider__text--before">Было</p>
+            <label class="visually-hidden" for="range-slider">Рейндж слайдера</label>
+            <input class="slider__input" id="range-slider" name="range-slider" type="range" min="0" max="100" step="1"
+              value="50">
+            <p class="slider__text slider__text--after">Стало</p>
+          </div>
+=======
       </div>
       <p class="presentation__cost">Затраты на питание: 15000 руб.</p>
       <div class="presentation__slider slider">
@@ -108,6 +128,7 @@
           <label class="visually-hidden" for="range-slider">Рейндж слайдера</label>
           <input class="slider__input" id="range-slider" name="range-slider" type="range" min="0" max="100" step="1" value="50">
           <p class="slider__text slider__text--after">Стало</p>
+>>>>>>> master
         </div>
       </div>
     </section>
@@ -116,7 +137,7 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__invitation">
           Приглашаем
-          к сотрудничеству
+          к&nbsp;сотрудничеству
           дилеров!
         </p>
         <div class="contacts__wrapper">
@@ -126,7 +147,7 @@
           <p class="contacts__city">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="contacts__map"><img src="https://via.placeholder.com/150x150" width="200" height="645"
+      <div class="contacts__map"><img src="https://via.placeholder.com/150x150" width="200" height="360"
           alt="ул. Большая Конюшенная, д. 19/8">
       </div>
     </section>
@@ -134,7 +155,7 @@
   <footer class="footer">
     <div class="footer__wrapper container">
       <a href="#" class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="150" height="150"
+        <img class="logo__img" src="https://via.placeholder.com/150x150" width="144" height="38"
           alt="Логотип Cat energy">
       </a>
       <ul class="footer__social social">
@@ -145,8 +166,8 @@
         </li>
       </ul>
       <div class="footer__academy">
-        <a href="https://htmlacademy.ru/" class="footer__academy--link">HTML Academy</a>
-        <a href="mailto:mail@htmlacademy.ru" class="footer__academy--mail" aria-label="Почта HTML Academy"></a>
+        <a href="https://htmlacademy.ru/" class="footer__link">HTML Academy</a>
+        <a href="mailto:mail@htmlacademy.ru" class="footer__mail" aria-label="Почта HTML Academy"></a>
       </div>
     </div>
   </footer>

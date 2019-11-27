@@ -1,0 +1,28 @@
+.slider {
+  height: 362px;
+}
+
+.slider__slide {
+  min-height: 289px;
+}
+
+.slider__slide--before {
+  padding: 1px;
+}
+
+.slider__slide--after {
+  padding: 1px;
+}
+
+.slider__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slider__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
