@@ -3,7 +3,6 @@
   box-sizing: border-box;
   padding-top: 35px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .presentation__title {
@@ -39,4 +38,49 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: $tablet-min-weight) {
+
+  .presentation {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #f2f2f2 60%);
+    box-sizing: border-box;
+    padding-top: 52px;
+    width: 100%;
+  }
+
+  .presentation__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .presentation__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .presentation__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 72px;
+    margin-right: 18px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .presentation__result {
+    margin: 0px;
+    width: 50%;
+  }
+
+  .presentation__cost {
+    width: 180px;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 26px;
+    text-align: right;
+  }
 }

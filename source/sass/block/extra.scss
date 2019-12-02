@@ -21,3 +21,19 @@
 .extra__gift {
   margin-top: 39px;
 }
+
+@media (min-width: $tablet-min-weight) {
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra__list {
+    padding-top: 87px;
+  }
+
+  .extra__item {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}

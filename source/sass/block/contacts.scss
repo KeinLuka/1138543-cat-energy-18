@@ -38,9 +38,40 @@
 
 .contacts__map {
   width: 100%;
-   img {
+
+  img {
     width: 100%;
-    height: auto;
+    height: 365px;
     object-fit: contain;
-   }
+  }
+}
+
+
+@media (min-width: $tablet-min-weight) {
+  .contacts__desc--main {
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__invitation {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__wrapper {
+    width: 160px;
+  }
+
+  .contacts__adress,
+  .contacts__city {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    padding-bottom: 30px;
+  }
 }

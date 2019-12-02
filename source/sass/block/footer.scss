@@ -27,3 +27,28 @@
 .footer__mail {
   position: relative;
 }
+
+@media (min-width: $tablet-min-weight) {
+
+  .footer {
+    padding-bottom: 62px;
+    padding-top: 61px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

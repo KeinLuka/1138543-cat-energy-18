@@ -26,3 +26,27 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-min-weight) {
+  .slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .slider__slide {
+    width: 100%;
+    text-align: center;
+  }
+
+  .slider__controls {
+    justify-content: space-between;
+    min-width: 540px;
+  }
+
+  .slider__text {
+    font-size: 20px;
+  }
+}

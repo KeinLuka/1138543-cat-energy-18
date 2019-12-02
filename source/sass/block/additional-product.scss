@@ -26,3 +26,33 @@
   min-width: 240px;
   height: 40px;
 }
+
+
+@media (min-width: $tablet-min-weight) {
+
+  .additional-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+
+  .additional-product__link {
+    width: 100%;
+  }
+
+  .additional-product__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-product__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product__price p {
+    margin-left: 50px;
+  }
+}

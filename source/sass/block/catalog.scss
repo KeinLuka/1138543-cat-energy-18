@@ -5,6 +5,9 @@
   line-height: 60px;
 }
 
-.catalog__more-product {
-  margin: 0px;
+@media (min-width: $tablet-min-weight) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

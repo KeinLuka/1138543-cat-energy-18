@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 22px;
-  background: url("../img/intro-mobile.png"), linear-gradient(to bottom ,#64a83b 0%, #64a83b 61.5%, #fff 61.5% ) ;
+  background: url("../img/intro-mobile.png"), linear-gradient(to bottom, #64a83b 0%, #64a83b 61.5%, #fff 61.5%);
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -37,4 +37,54 @@
   margin-top: 302px;
   min-width: 280px;
   height: 40px;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .intro {
+    color: #000;
+    background: none;
+    padding-top: 28px;
+    padding-left: 106px;
+    padding-bottom: 526px;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .intro__wrapper {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .intro__title {
+    @include title-style-none;
+    font-size: 60px;
+    line-height: 60px;
+    width: 427px;
+    text-align: left;
+  }
+
+  .intro__desc {
+    margin-top: 41px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__link {
+    margin-top: 50px;
+    height: 52px;
+    min-width: 245px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .intro {
+    position: relative;
+    margin: 0;
+    max-width: 1440px;
+    min-height: 668px;
+    padding-bottom: 0;
+    background: url("../img/intro-mobile.png");
+  }
 }
