@@ -1,19 +1,13 @@
 .intro {
   color: #fff;
   font-family: "Oswald", "Arial", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 22px;
-  background: url("../img/intro-mobile.png"), linear-gradient(to bottom, #64a83b 0%, #64a83b 61.5%, #fff 61.5%);
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 .intro__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro__title {
@@ -25,7 +19,6 @@
 }
 
 .intro__desc {
-  margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 14px;
@@ -34,7 +27,7 @@
 }
 
 .intro__link {
-  margin-top: 302px;
+  margin-top: 290px;
   min-width: 280px;
   height: 40px;
 }
@@ -44,17 +37,12 @@
     color: #000;
     background: none;
     padding-top: 28px;
-    padding-left: 106px;
-    padding-bottom: 526px;
-    align-items: flex-start;
-    max-width: 800px;
-    margin: 0 auto;
+    padding-bottom: 528px;
   }
 
   .intro__wrapper {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+    align-items: flex-start;
+    padding-left: 88px;
   }
 
   .intro__title {
@@ -72,7 +60,7 @@
   }
 
   .intro__link {
-    margin-top: 50px;
+    margin-top: 28px;
     height: 52px;
     min-width: 245px;
   }
@@ -80,11 +68,15 @@
 
 @media (min-width: $desctop-min-weight) {
   .intro {
-    position: relative;
-    margin: 0;
-    max-width: 1440px;
-    min-height: 668px;
-    padding-bottom: 0;
-    background: url("../img/intro-mobile.png");
+    padding-bottom: 268px;
+  }
+
+  .intro__wrapper {
+    padding-left: 80px;
+    padding-top: 52px;
+  }
+
+  .intro__link {
+    margin-top: 33px;
   }
 }

@@ -1,17 +1,12 @@
-.contacts__desc--main {
-  padding-top: 27px;
-  padding-bottom: 24px;
+.contacts__desc {
+  padding-top: 13px;
+  padding-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .contacts__desc--catalog {
-  padding-top: 27px;
-  padding-bottom: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background-color: #f2f2f2;
 }
 
@@ -20,20 +15,21 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
   width: 140px;
 }
 
 .contacts__wrapper {
+  margin-top: 15px;
   width: 140px;
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contacts__adress,
 .contacts__city {
-  font-family: "Arial", "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
   margin: 0;
+  padding: 0;
 }
 
 .contacts__map {
@@ -42,17 +38,15 @@
   img {
     width: 100%;
     height: 365px;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
 
 @media (min-width: $tablet-min-weight) {
-  .contacts__desc--main {
-    padding-top: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 24px;
+  .contacts__desc {
+    padding-top: 46px;
+    padding-bottom: 36px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,17 +55,44 @@
   .contacts__invitation {
     font-size: 20px;
     line-height: 25px;
+    margin-left: 6%;
   }
 
   .contacts__wrapper {
     width: 160px;
+    margin-right: 6%;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 
   .contacts__adress,
   .contacts__city {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-    padding-bottom: 30px;
+    padding-bottom: 21px;
   }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .contacts {
+    position: relative;
+    text-align: left;
+  }
+
+  .contacts__desc {
+    position: absolute;
+    height: 200px;
+    width: 39.5%;
+    justify-content: space-between;
+    background: #fff;
+    top: 95px;
+    left: 8%;
+    padding-left: 50px;
+    padding-right: 56px;
+  }
+
+  .contacts__wrapper {
+    text-align: left;
+  }
+
 }

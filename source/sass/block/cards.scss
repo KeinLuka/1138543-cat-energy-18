@@ -7,24 +7,25 @@
   border-top: 1px solid #e6e6e6;
 }
 
+.cards__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
 
 @media (min-width: $tablet-min-weight) {
   .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 60px;
   }
-
-  .cards__item {
-    min-width: 324px;
-    width: 40%;
-    margin-top: 20px;
-  }
-
   .cards__item {
     border-top: none;
-    background: linear-gradient(to bottom,#fff 0%,#fff 30%,#f2f2f2 30%)
+    background:#f2f2f2;
   }
 
+}
+
+@media (min-width: $desctop-min-weight) {
+  .cards {
+    justify-content: flex-start;
+  }
 }

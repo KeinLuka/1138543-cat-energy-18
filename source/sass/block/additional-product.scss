@@ -54,5 +54,19 @@
 
   .additional-product__price p {
     margin-left: 50px;
+    margin-top: 4px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .additional-product {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .additional-product__link {
+    min-width: 245px;
+    width: 25%;
   }
 }

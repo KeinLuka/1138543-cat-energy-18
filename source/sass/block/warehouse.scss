@@ -1,4 +1,12 @@
-.warehouse__title{
+.warehouse {
+  padding-top: 79px;
+}
+
+.warehouse__wrapp {
+  width: 100%;
+}
+
+.warehouse__title {
   @include title-style-none;
   text-transform: uppercase;
   font-size: 16px;
@@ -7,17 +15,20 @@
   text-align: center;
 }
 
-
 .warehouse-desc {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
   text-align: center;
+  margin-top: 8px;
+  margin-bottom: 21px;
 }
-
 
 .warehouse__link {
   text-align: center;
   color: #000;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-min-weight) {

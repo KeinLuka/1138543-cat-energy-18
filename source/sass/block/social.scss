@@ -1,6 +1,5 @@
 .social {
-  padding: 1px;
-  @include list-style-none();
+  list-style: none;
 }
 
 .social__item {

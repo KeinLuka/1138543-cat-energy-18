@@ -1,19 +1,34 @@
 .footer {
   background-color: #f2f2f2;
   padding-bottom: 35px;
-  padding-top: 40px;
+  padding-top: 32px;
+
 }
 
 .footer__wrapper {
-  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__social {
-  margin: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 14px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
 }
 
 .footer__academy {
-  margin: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 .footer__link {
@@ -32,20 +47,19 @@
 
   .footer {
     padding-bottom: 62px;
-    padding-top: 61px;
+    padding-top: 84px;
   }
 
   .footer__wrapper {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .footer__social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 35%;
+    border: none;
+    padding-left: 0;
   }
+
 
   .footer__link {
     font-size: 16px;

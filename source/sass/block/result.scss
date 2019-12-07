@@ -5,6 +5,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 26px;
+  max-width: 500px;
 }
 
 .result__wrapper {
@@ -33,6 +34,10 @@
 @media (min-width: $tablet-min-weight) {
   .result {
     margin: 0;
+    padding-top: 52px;
+    padding-left: 18px;
+    padding-right: 8px;
+    max-width: 100%;
   }
 
   .result__time,
@@ -44,5 +49,13 @@
   .result__desc {
     font-size: 14px;
     line-height: 14px;
+    width: 130px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .result {
+    padding-top: 69px;
+    min-width: 354px;
   }
 }
