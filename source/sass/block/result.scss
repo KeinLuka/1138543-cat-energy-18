@@ -5,6 +5,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 26px;
+  max-width: 500px;
 }
 
 .result__wrapper {
@@ -18,7 +19,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
 }
 
 .result__desc {
@@ -28,4 +29,33 @@
   display: inline-block;
   width: 60px;
   margin: 10px 0 0 0;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .result {
+    margin: 0;
+    padding-top: 52px;
+    padding-left: 18px;
+    padding-right: 8px;
+    max-width: 100%;
+  }
+
+  .result__time,
+  .result__weight {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__desc {
+    font-size: 14px;
+    line-height: 14px;
+    width: 130px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .result {
+    padding-top: 69px;
+    min-width: 354px;
+  }
 }

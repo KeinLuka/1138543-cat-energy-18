@@ -1,11 +1,13 @@
 .extra {
-  padding-top: 33px;
+  padding-top: 26px;
   box-sizing: border-box;
+  padding-bottom: 35px;
 }
 
 .extra__title {
   @include title-style-none;
   font-weight: normal;
+  margin-bottom: 31px;
 }
 
 .extra__list {
@@ -15,9 +17,65 @@
 .extra__item {
   box-sizing: border-box;
   padding-top: 15px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 }
 
 .extra__gift {
-  margin-top: 39px;
+  margin-top: 41px;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .extra {
+    padding-top: 65px;
+    box-sizing: border-box;
+    padding-bottom: 76px;
+  }
+
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 5.17%;
+  }
+
+  .extra__list {
+    padding-top: 48px;
+  }
+
+  .extra__item {
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+
+  .extra__gift {
+    margin-top: 69px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .extra {
+    padding-top: 69px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 87px;
+  }
+
+  .extra__list {
+    width: 73.4%;
+  }
+
+  .extra__title {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .extra__gift {
+    width: 20.1%;
+    margin-top: 48px;
+  }
+
+  .extra__item {
+    padding-top: 16px;
+    padding-bottom: 9px;
+  }
 }

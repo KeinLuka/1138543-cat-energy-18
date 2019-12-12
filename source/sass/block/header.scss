@@ -1,7 +1,35 @@
 .header {
+  font-family: "Oswald", "Arial", sans-serif;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.header--main {
+  &::before {
+    content: "";
+    top: 66px;
+    width: 100%;
+    min-height: 305px;
+    background-color: #64a83b;
+    background-image: url("../img/intro-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.header--catalog {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 19px;
+}
+
+.header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -9,7 +37,46 @@
   width: 110px;
 }
 
-.header-navigation {
-  margin: 1px;
+
+@media (min-width: $tablet-min-weight) {
+  .header {
+    padding-top: 42px;
+    padding-bottom: 45px;
+  }
+
+  .header--main {
+    &::before {
+      display: none;
+    }
+  }
+
+  .header--catalog {
+    border: none;
+  }
+
+  .header__logo {
+    margin-left: 75px;
+    min-width: 103px;
+    height: 25px;
+  }
+
+  .header-navigation__button {
+    display: none;
+  }
 }
 
+@media (min-width: $desctop-min-weight) {
+  .header {
+    padding-top: 72px;
+  }
+
+  .header--main {
+    &::before {
+      display: block;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 696px;
+    }
+  }
+}

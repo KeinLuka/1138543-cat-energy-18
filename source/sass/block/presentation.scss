@@ -1,23 +1,19 @@
 .presentation {
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding-top: 35px;
-  width: 100%;
-  box-sizing: border-box;
+  padding-top: 17px;
 }
 
 .presentation__title {
   @include title-style-none();
   font-size: 36px;
   line-height: 60px;
-  margin-left: 18px
 }
 
 .presentation__desc {
   font-family: "Arial", "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 18px;
   margin-top: 23px;
 }
 
@@ -39,4 +35,88 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .presentation {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #f2f2f2 60%);
+    box-sizing: border-box;
+    padding-top: 22px;
+  }
+
+  .presentation__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .presentation__wrapper-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .presentation__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .presentation__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 64px;
+    margin-right: 18px;
+    margin-left: 0;
+  }
+
+  .presentation__result {
+    margin: 0;
+    width: 50%;
+  }
+
+  .presentation__cost {
+    width: 180px;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0;
+    padding-top: 44px;
+    text-align: right;
+  }
+
+  .presentation__slider {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .presentation {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25.5%, #f2f2f2 25.5%);
+    padding-bottom: 69px;
+  }
+
+  .presentation__desc {
+    margin-top: 145px;
+    margin-right: 28%;
+  }
+
+  .presentation__wrapper-desc {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .presentation__slider {
+    width: 50%;
+  }
+
+  .presentation__cost {
+    padding-top: 49px;
+    width: 100%;
+    text-align-last: left;
+  }
+
+  .presentation__money {
+    margin-left: 66px;
+  }
 }

@@ -12,12 +12,27 @@
 .container {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 500px;
+  max-width: 1440px;
   box-sizing: border-box;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 body {
-  margin: 0;
+  position: relative;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .container {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }

@@ -1,10 +1,28 @@
+.catalog {
+  padding-top: 15px;
+}
+
 .catalog__title {
   @include title-style-none;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
+  padding-bottom: 28px;
 }
 
-.catalog__more-product {
-  margin: 0px;
+@media (min-width: $tablet-min-weight) {
+  .catalog {
+    padding-top: 28px;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .catalog {
+    padding-top: 46px;
+  }
 }
