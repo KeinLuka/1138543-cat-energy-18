@@ -1,6 +1,7 @@
 .extra {
-  padding-top: 27px;
+  padding-top: 26px;
   box-sizing: border-box;
+  padding-bottom: 35px;
 }
 
 .extra__title {
@@ -20,18 +21,20 @@
 }
 
 .extra__gift {
-  margin-top: 39px;
+  margin-top: 41px;
 }
 
 @media (min-width: $tablet-min-weight) {
-
   .extra {
     padding-top: 65px;
+    box-sizing: border-box;
+    padding-bottom: 76px;
   }
 
   .extra__title {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 5.17%;
   }
 
   .extra__list {
@@ -39,25 +42,31 @@
   }
 
   .extra__item {
-    padding-top: 27px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 27px;
+  }
+
+  .extra__gift {
+    margin-top: 69px;
   }
 }
 
 @media (min-width: $desctop-min-weight) {
   .extra {
-    padding-top: 75px;
+    padding-top: 69px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 87px;
   }
 
   .extra__list {
-    width: 73.4%
+    width: 73.4%;
   }
 
   .extra__title {
     width: 100%;
+    margin-left: 0;
   }
 
   .extra__gift {

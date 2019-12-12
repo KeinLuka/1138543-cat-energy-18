@@ -32,15 +32,19 @@
 }
 
 .card__table {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 9px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin-top: 12px;
   font-size: 12px;
-  line-height: 16px;
   width: 100%;
 }
 
 .card__rigth {
   text-align: right;
+  padding: 0;
+}
+
+.card__left {
+  padding: 0;
 }
 
 .card__link {
@@ -52,15 +56,14 @@
 @media (min-width: $tablet-min-weight) {
   .card {
     width: 45.7%;
-    margin-top: 138px;
+    margin-top: 137px;
     flex-direction: column;
     align-items: center;
     padding-top: 162px;
     padding-bottom: 40px;
-    padding-right: 1;
-    margin-bottom: 2px;
-    padding-left: 5.4%;
-    padding-right: 5.4%;
+    margin-bottom: 3px;
+    padding-left: 5.3%;
+    padding-right: 5.1%;
   }
 
   .card__wrapper {
@@ -71,7 +74,7 @@
 
   .card__img {
     position: absolute;
-    top: -118px;
+    top: -172px;
     left: center;
   }
 
@@ -93,28 +96,53 @@
   .card__table {
     font-size: 16px;
     line-height: 16px;
-    margin-top: 26px;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+
+  .card__rigth,
+  .card__left {
+    vertical-align: middle;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   .card__link {
-    margin-top: 61px;
+    margin-top: 33px;
   }
 }
 
 @media (min-width: $desctop-min-weight) {
-
   .card {
     width: 20%;
     padding-left: 3%;
     padding-right: 3%;
-    margin-right: 6.6%;
+    margin-right: 6.65%;
+    margin-top: 135px;
+    margin-bottom: 8px;
   }
 
   .card:nth-child(4n) {
     margin-right: 0;
   }
 
+  .card__rigth,
+  .card__left {
+    padding-top: 7px;
+  }
+
+  .card__wrapper {
+    padding-top: 3px;
+  }
+
+  .card__table {
+    margin-top: 19px;
+    margin-bottom: 34px;
+  }
+
   .card__link {
-    min-width: 168px;
+    margin: 0;
+    min-width: 100%;
   }
 }

@@ -38,7 +38,6 @@
 }
 
 @media (min-width: $tablet-min-weight) {
-
   .presentation {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #f2f2f2 60%);
     box-sizing: border-box;
@@ -69,11 +68,11 @@
     line-height: 24px;
     margin-top: 64px;
     margin-right: 18px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .presentation__result {
-    margin: 0px;
+    margin: 0;
     width: 50%;
   }
 
@@ -92,15 +91,14 @@
 }
 
 @media (min-width: $desctop-min-weight) {
-
   .presentation {
-    background: linear-gradient(to bottom,#fff 0%,#fff 25.5%,#f2f2f2 25.5%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25.5%, #f2f2f2 25.5%);
     padding-bottom: 69px;
   }
 
   .presentation__desc {
     margin-top: 145px;
-    margin-right: 28%
+    margin-right: 28%;
   }
 
   .presentation__wrapper-desc {

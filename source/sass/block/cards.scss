@@ -17,11 +17,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .cards__item {
     border-top: none;
-    background:#f2f2f2;
+    background: #f2f2f2;
   }
-
 }
 
 @media (min-width: $desctop-min-weight) {

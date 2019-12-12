@@ -84,9 +84,10 @@
     height: 200px;
     width: 39.5%;
     justify-content: space-between;
-    background: #fff;
-    top: 95px;
-    left: 8%;
+    background: #ffffff;
+    top: 48.6%;
+    transform: translateY(-50%);
+    left: 7.5%;
     padding-left: 50px;
     padding-right: 56px;
   }
@@ -95,4 +96,9 @@
     text-align: left;
   }
 
+  .contacts__map {
+    img {
+      height: 399px;
+    }
+  }
 }

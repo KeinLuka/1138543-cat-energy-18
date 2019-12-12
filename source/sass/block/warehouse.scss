@@ -24,17 +24,21 @@
 }
 
 .warehouse__link {
+  margin-top: auto;
   text-align: center;
-  color: #000;
+  color: #000000;
   padding-top: 11px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   width: 100%;
 }
 
 @media (min-width: $tablet-min-weight) {
   .warehouse {
+    flex-direction: row;
+    align-items: stretch;
     background: #ffffff;
     border: 1px solid #f2f2f2;
+    padding-top: 23%;
   }
 
   .warehouse__wrapp {
@@ -42,14 +46,32 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .warehouse__title {
     font-size: 20px;
     line-height: 20px;
+    width: 65%;
   }
 
   .warehouse-desc {
+    margin-top: 28px;
     font-size: 16px;
+    width: 70%;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .warehouse {
+    padding-top: 13.4%;
+  }
+
+  .warehouse__title {
+    width: 100%;
+  }
+
+  .warehouse-desc {
+    width: 100%;
   }
 }

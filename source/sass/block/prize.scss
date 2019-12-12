@@ -1,14 +1,54 @@
 .prize {
   background-color: #68b738;
+  min-height: 289px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 20%;
+  padding-bottom: 15%;
+  padding-right: 20%;
+  text-align: center;
 }
 
 .prize__desc {
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
+  margin: 0;
+  margin-top: auto;
 }
 
 
 @media (min-width: $tablet-min-weight) {
+  .prize {
+    min-height: 200px;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    padding-right: 17.5%;
+  }
 
+  .prize__desc {
+    margin: 0;
+    width: 28%;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .prize {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    padding-left: 38px;
+    box-sizing: border-box;
+    padding-right: 40px;
+  }
+
+  .prize__desc {
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+  }
 }
