@@ -29,7 +29,8 @@
 .intro__link {
   margin-top: 290px;
   min-width: 280px;
-  height: 40px;
+  min-height: 40px;
+  font-size: 14px;
 }
 
 @media (min-width: $tablet-min-weight) {
@@ -63,6 +64,7 @@
     margin-top: 28px;
     height: 52px;
     min-width: 245px;
+    font-size: 20px;
   }
 }
 

@@ -15,6 +15,7 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 23px;
+  padding-right: 5px;
 }
 
 .presentation__result {
@@ -39,7 +40,7 @@
 
 @media (min-width: $tablet-min-weight) {
   .presentation {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #f2f2f2 60%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 56.5%, #f2f2f2 56.5%);
     box-sizing: border-box;
     padding-top: 22px;
   }
@@ -69,6 +70,7 @@
     margin-top: 64px;
     margin-right: 18px;
     margin-left: 0;
+    padding-right: 0;
   }
 
   .presentation__result {
@@ -85,6 +87,11 @@
     text-align: right;
   }
 
+  .presentation__cost span {
+    display: block;
+    width: 100%;
+  }
+
   .presentation__slider {
     width: 100%;
   }
@@ -92,12 +99,12 @@
 
 @media (min-width: $desctop-min-weight) {
   .presentation {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25.5%, #f2f2f2 25.5%);
+    background: linear-gradient(to bottom, #ffffff 0px, #ffffff 156px, #f2f2f2 156px);
     padding-bottom: 69px;
   }
 
   .presentation__desc {
-    margin-top: 145px;
+    margin-top: 24%;
     margin-right: 28%;
   }
 
@@ -114,6 +121,11 @@
     padding-top: 49px;
     width: 100%;
     text-align-last: left;
+  }
+
+  .presentation__cost span {
+    display: inline;
+    padding-left: 63px;
   }
 
   .presentation__money {
