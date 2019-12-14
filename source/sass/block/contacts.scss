@@ -34,6 +34,7 @@
 
 .contacts__map {
   width: 100%;
+  background-color: #f2f2f2;
 
   img {
     width: 100%;
@@ -70,6 +71,15 @@
   .contacts__adress,
   .contacts__city {
     padding-bottom: 21px;
+  }
+
+  .contacts__map {
+    width: 100%;
+
+    img {
+      height: 398px;
+      object-fit: cover;
+    }
   }
 }
 

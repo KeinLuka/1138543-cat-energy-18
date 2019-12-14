@@ -45,8 +45,8 @@
 
 @media (min-width: $tablet-min-weight) {
   .footer {
-    padding-bottom: 62px;
-    padding-top: 84px;
+    padding-bottom: 47px;
+    padding-top: 37px;
   }
 
   .footer__wrapper {
@@ -58,10 +58,12 @@
     width: 35%;
     border: none;
     padding-left: 0;
+    margin: 0;
   }
 
   .footer__academy {
-    width: 25%;
+    width: 23%;
+    padding-top: 0;
   }
 
   .footer__link {
@@ -72,11 +74,12 @@
 
 @media (min-width: $desctop-min-weight) {
   .footer {
-    padding-bottom: 27px;
-    padding-top: 27px;
+    padding-bottom: 49px;
+    padding-top: 35px;
   }
 
   .footer__academy {
+    padding-top: 7px;
     width: 13.4%;
   }
 }
