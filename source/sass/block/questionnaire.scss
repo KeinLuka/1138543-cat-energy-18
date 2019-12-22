@@ -1,0 +1,51 @@
+.questionnaire {
+  font-family: "Oswald", "Arial", sans-serif;
+  padding-top: 15px;
+}
+
+.questionnaire__title {
+  @include title-style-none;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.questionnaire__desc {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 25px;
+  padding-right: 10%;
+}
+
+
+@media (min-width: $tablet-min-weight) {
+
+  .questionnaire {
+    padding-top: 28px;
+  }
+
+  .questionnaire__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .questionnaire__desc {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    padding-left: 5.5%;
+    padding-top: 55px;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .questionnaire {
+    padding-top: 47px;
+  }
+
+  .questionnaire__desc {
+    padding-left: 0;
+  }
+}

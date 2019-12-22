@@ -1,7 +1,8 @@
 .presentation {
-  background-color: #f2f2f2;
+  background-color: $background-greey-color;
   box-sizing: border-box;
   padding-top: 17px;
+  z-index: -1;
 }
 
 .presentation__title {
@@ -29,6 +30,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 15px 0 0 0;
+  color: $additional-color-text;
 }
 
 .presentation__slider {
@@ -40,7 +42,7 @@
 
 @media (min-width: $tablet-min-weight) {
   .presentation {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 56.5%, #f2f2f2 56.5%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 56.5%, $background-greey-color 56.5%);
     box-sizing: border-box;
     padding-top: 22px;
   }
@@ -99,7 +101,7 @@
 
 @media (min-width: $desctop-min-weight) {
   .presentation {
-    background: linear-gradient(to bottom, #ffffff 0px, #ffffff 156px, #f2f2f2 156px);
+    background: linear-gradient(to bottom, #ffffff 0px, #ffffff 156px, $background-greey-color 156px);
     padding-bottom: 69px;
   }
 

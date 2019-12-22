@@ -17,10 +17,18 @@
 .site-list__link {
   padding-top: 10px;
   padding-bottom: 6px;
-  color: #000000;
+  color: $additional-color-text;
   text-decoration: none;
   cursor: pointer;
   position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-min-weight) {
@@ -45,6 +53,22 @@
       background-color: #64a83b;
       top: 42px;
       left: 1px;
+    }
+  }
+
+  .site-list__link--active-form {
+    &::before {
+      width: 100%;
+      top: 46px;
+      left: 0;
+    }
+  }
+
+  .site-list__link--active-catalog {
+    &::before {
+      width: 100%;
+      top: 46px;
+      left: 0;
     }
   }
 
