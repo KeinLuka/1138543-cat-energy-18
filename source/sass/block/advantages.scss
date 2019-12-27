@@ -1,4 +1,4 @@
-.advantages {
+.advantages__wrapper {
   padding-top: 6px;
   padding-bottom: 20px;
   max-width: 350px;
@@ -89,6 +89,22 @@
 
 @media (min-width: $tablet-min-weight) {
   .advantages {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 620px;
+      background-color: #ffffff;
+      z-index: -1;
+      bottom: -597px;
+      left: 0;
+      z-index: 0;
+    }
+  }
+
+  .advantages__wrapper {
     padding-top: 16px;
     padding-bottom: 20px;
     max-width: 1440px;
@@ -178,6 +194,21 @@
 
 @media (min-width: $desctop-min-weight) {
   .advantages {
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 156px;
+      background-color: #ffffff;
+      z-index: -1;
+      bottom: -156px;
+      left: 0;
+      z-index: 0;
+    }
+  }
+
+  .advantages__wrapper {
     padding-top: 44px;
     padding-bottom: 0;
   }

@@ -11,6 +11,15 @@
   background-color: $background-greey-color;
 }
 
+.contacts__container--catalog,
+.contacts__container--form {
+  background-color: $background-greey-color;
+}
+
+.contacts__container  {
+  position: relative;
+}
+
 .contacts__invitation {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -97,13 +106,14 @@
 
   .contacts__desc {
     position: absolute;
-    min-height: 200px;
-    width: 39.5%;
+    min-height: 119px;
+    width: 32.3%;
     justify-content: space-between;
     background: #ffffff;
-    top: 48.6%;
+    top: 194px;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: 7.5%;
+    left: 7.6%;
     padding-left: 50px;
     padding-right: 56px;
   }

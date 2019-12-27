@@ -23,7 +23,8 @@
         <ul class="main-navigation__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link--active site-list__link--active-form">Подбор программы</a></li>
+          <li class="site-list__item"><a
+              class="site-list__link site-list__link--active site-list__link--active-form">Подбор программы</a></li>
         </ul>
       </nav>
     </div>
@@ -37,15 +38,16 @@
           <ul class="form__date-cat">
             <li class="form__date-cat-item">
               <label class="form__date-cat-label" for="name-cat">Имя:*</label>
-              <input class="form__date-cat-input" name="name-cat" id="name-cat" type="text" required>
+              <input class="form__date-cat-input" name="name-cat" id="name-cat" type="text" maxlength="20" required>
             </li>
             <li class="form__date-cat-item">
               <label class="form__date-cat-label" for="weight-cat">Вес (кг):*</label>
-              <input class="form__date-cat-input" name="weight-cat" id="weight-cat" type="text" required>
+              <input class="form__date-cat-input number" name="weight-cat" id="weight-cat" type="text" maxlength="3"
+                required>
             </li>
             <li class="form__date-cat-item">
               <label class="form__date-cat-label" for="age-cat">Возраст (лет):</label>
-              <input class="form__date-cat-input" name="age-cat" id="age-cat" type="text">
+              <input class="form__date-cat-input number" name="age-cat" id="age-cat" type="text" maxlength="2">
             </li>
           </ul>
           <ul class="form__program">
@@ -55,7 +57,7 @@
               <label class="form__program-label" for="losing-weight">Похудение</label>
             </li>
             <li class="form__program-item">
-              <input class="form__program-input" name="program" id="set" type="radio" value="set-mass">
+              <input class="form__program-input" name="program" id="set" type="radio" value="set-mass" disabled>
               <label class="form__program-label" for="set">Набор массы</label>
             </li>
             <li class="form__program-item">
@@ -73,7 +75,7 @@
             </li>
             <li class="form__master-item">
               <label class="form__master-label" for="master__phone">Телефон:*</label>
-              <input class="form__master-input" name="master__phone" id="master__phone" type="text" required>
+              <input class="form__master-input number" name="master__phone" id="master__phone" type="tel" required>
             </li>
           </ul>
         </div>
@@ -92,7 +94,7 @@
               <label class="form__extra-label" for="sugar-substitute">Сахарозаменитель</label>
             </li>
             <li class="form__extra-item">
-              <input class="form__extra-input" name="water" id="water" type="checkbox" value="water">
+              <input class="form__extra-input" name="water" id="water" type="checkbox" value="water" disabled>
               <label class="form__extra-label" for="water">Питьевая вода</label>
             </li>
             <li class="form__extra-item">
@@ -112,18 +114,20 @@
       </form>
     </section>
     <section class="contacts">
-      <div class="contacts__desc contacts__desc--form container">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__invitation">
-          приглашаем
-          к&nbsp;сотрудничеству
-          дилеров!
-        </p>
-        <div class="contacts__wrapper">
-          <p class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8
+      <div class="contacts__container contacts__container--form container">
+        <div class="contacts__desc contacts__desc--form">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__invitation">
+            приглашаем
+            к&nbsp;сотрудничеству
+            дилеров!
           </p>
-          <p class="contacts__city">Санкт-Петербург</p>
+          <div class="contacts__wrapper">
+            <p class="contacts__adress">
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
@@ -149,6 +153,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

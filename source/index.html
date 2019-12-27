@@ -64,30 +64,32 @@
         </li>
       </ul>
     </section>
-    <section class="advantages container">
-      <h2 class="advantages__title">Как это работает</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--leaf" data-value="1">
-          <p class="advantages__desc">
-            Функциональное питание содержит только полезные питательные вещества.
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--powder" data-value="2">
-          <p class="advantages__desc">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--dining" data-value="3">
-          <p class="advantages__desc">
-            Замените один-два приема обычной еды на наше функциональное питание.
-          </p>
-        </li>
-        <li class="advantages__item advantages__item--clock" data-value="4">
-          <p class="advantages__desc">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
-          </p>
-        </li>
-      </ul>
+    <section class="advantages">
+      <div class="advantages__wrapper container">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--leaf" data-value="1">
+            <p class="advantages__desc">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--powder" data-value="2">
+            <p class="advantages__desc">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--dining" data-value="3">
+            <p class="advantages__desc">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--clock" data-value="4">
+            <p class="advantages__desc">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="presentation">
       <div class="presentation__wrapper container">
@@ -114,39 +116,43 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x , img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x , img/before-tablet@2x.png 2x">
-              <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"  width="311" height="232" alt="До использования корма">
+              <img class="slider__img slider__img--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="До использования корма">
             </picture>
           </div>
-          <div class="slider__slide slider__slide--after visually-hidden">
+          <div class="slider__slide slider__slide--after">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x , img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x , img/after-tablet@2x.png 2x">
-              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"  width="251" height="240" alt="После использования корма">
+              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="После использования корма">
             </picture>
           </div>
           <div class="slider__controls">
             <p class="slider__text slider__text--before">Было</p>
             <label class="visually-hidden" for="range-slider">Рейндж слайдера</label>
             <input class="slider__input" id="range-slider" name="range-slider" type="range" min="0" max="100" step="1"
-              value="50">
-            <p class="slider__text slider__text--after">Стало</p>
+              value="49">
+            <p class="slider__text slider__text--after">Cтало</p>
           </div>
         </div>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__desc contacts__desc--main container">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__invitation">
-          Приглашаем
-          к&nbsp;сотрудничеству
-          дилеров!
-        </p>
-        <div class="contacts__wrapper">
-          <p class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8
+      <div class="contacts__container container">
+        <div class="contacts__desc contacts__desc--main">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__invitation">
+            Приглашаем
+            к&nbsp;сотрудничеству
+            дилеров!
           </p>
-          <p class="contacts__city">Санкт-Петербург</p>
+          <div class="contacts__wrapper">
+            <p class="contacts__adress">
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
@@ -172,6 +178,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

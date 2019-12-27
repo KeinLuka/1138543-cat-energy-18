@@ -15,6 +15,7 @@
 .btn--green {
   color: #ffffff;
   background-color: $background-green-color;
+  transition: 0.5s;
 
   &:hover {
     background-color: #5eaa2f;
@@ -27,6 +28,7 @@
 
 .btn--grey {
   background-color: $background-greey-color;
+  transition: 0.5s;
 
   &:hover {
     background-color: #ebebeb;
@@ -61,6 +63,7 @@
       width: 33px;
       height: 11px;
       background-image: url("../img/right-arrow-verylong.png");
+      transition: 0.5s;
     }
   }
 

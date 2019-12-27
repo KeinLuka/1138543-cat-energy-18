@@ -29,6 +29,27 @@
     padding-top: 65px;
     box-sizing: border-box;
     padding-bottom: 76px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3.6%;
+      height: 3px;
+      top: 86px;
+      background-color: green;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 42.6%;
+      height: 3px;
+      top: 86px;
+      background-color: green;
+
+    }
   }
 
   .extra__title {
