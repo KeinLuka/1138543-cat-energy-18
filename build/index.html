@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/Oswald-Regular.woff" as="font" />
+  <link rel="preload" href="fonts/Oswald-Regular.woff" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,11 +17,9 @@
         <img class="logo__img" src="img/logo-mobile-header.svg" width="110" height="25" alt="Логотип Cat energy">
       </a>
       <nav class="header-navigation main-navigation">
-        <button class="header-navigation__button header-navigation__button--close" type="button"
-          aria-label="Открыть меню"></button>
+        <button class="header-navigation__button header-navigation__button--close" type="button" aria-label="Открыть меню"></button>
         <ul class="main-navigation__list site-list site-list--index">
-          <li class="site-list__item"><a
-              class="site-list__link site-list__link--index site-list__link--active">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--index site-list__link--active">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link site-list__link--index" href="catalog.html">Каталог
               продукции</a></li>
           <li class="site-list__item"><a class="site-list__link site-list__link--index" href="form.html">Подбор
@@ -114,25 +112,30 @@
         <div class="presentation__slider slider">
           <div class="slider__slide slider__slide--before">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x , img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x , img/before-tablet@2x.webp 2x">
+              <source type="image/webp" class="slider__img slider__img--before" src="img/before-mobile@1x.webp" srcset="img/before-mobile@2x.webp 2x" width="311" height="232" alt="До использования корма">
+
               <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x , img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x , img/before-tablet@2x.png 2x">
-              <img class="slider__img slider__img--before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="До использования корма">
+              <img class="slider__img slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="До использования корма">
             </picture>
           </div>
           <div class="slider__slide slider__slide--after">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x , img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x , img/after-tablet@2x.webp 2x">
+              <source type="image/webp" class="slider__img slider__img--after" src="img/after-mobile@1x.webp" srcset="img/after-mobile@2x.webp 2x" width="251" height="240" alt="После использования корма">
+
               <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x , img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x , img/after-tablet@2x.png 2x">
-              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="После использования корма">
+              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="После использования корма">
             </picture>
           </div>
           <div class="slider__controls">
             <p class="slider__text slider__text--before">Было</p>
             <label class="visually-hidden" for="range-slider">Рейндж слайдера</label>
-            <input class="slider__input" id="range-slider" name="range-slider" type="range" min="0" max="100" step="1"
-              value="49">
+            <input class="slider__input" id="range-slider" name="range-slider" type="range" min="0" max="100" step="1" value="49">
             <p class="slider__text slider__text--after">Cтало</p>
           </div>
         </div>
@@ -162,13 +165,11 @@
   <footer class="footer">
     <div class="footer__wrapper container">
       <a href="#" class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="144" height="38"
-          alt="Логотип Cat energy">
+        <img class="logo__img" src="https://via.placeholder.com/150x150" width="144" height="38" alt="Логотип Cat energy">
       </a>
       <ul class="footer__social social">
         <li class="social__item"><a href="#" class="social__link social__link--vk" aria-label="Ссылка на вк"></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--inst"
-            aria-label="Ссылка на инстаграмм"></a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--inst" aria-label="Ссылка на инстаграмм"></a></li>
         <li class="social__item"><a href="#" class="social__link social__link--fb" aria-label="Ссылка на фейсбук"></a>
         </li>
       </ul>
