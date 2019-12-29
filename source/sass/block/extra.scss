@@ -30,32 +30,33 @@
     box-sizing: border-box;
     padding-bottom: 76px;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 3.6%;
-      height: 3px;
-      top: 86px;
-      background-color: green;
-      left: 0;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 42.6%;
-      height: 3px;
-      top: 86px;
-      background-color: green;
-
-    }
   }
 
   .extra__title {
     font-size: 36px;
     line-height: 36px;
     margin-left: 5.17%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 3px;
+      top: 21px;
+      background-color: $background-green-color;
+      left: -94px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 812px;
+      height: 3px;
+      top: 21px;
+      left: 374px;
+      background-color: $background-green-color;
+    }
   }
 
   .extra__list {
@@ -88,6 +89,20 @@
   .extra__title {
     width: 100%;
     margin-left: 0;
+
+    &::before {
+      content: "";
+      width: 69px;
+      top: 20px;
+      left: -109px;
+    }
+
+    &::after {
+      content: "";
+      width: 957px;
+      top: 20px;
+      left: 373px;
+    }
   }
 
   .extra__gift {
