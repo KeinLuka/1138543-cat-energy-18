@@ -1,11 +1,11 @@
 .logo {
-  background-color: #000000;
+  background-color: transparent;
 }
 
 .logo--header {
-  width: 100px;
+  min-width: 100px;
 }
 
 .logo--footer {
-  width: 150px;
+  min-width: 150px;
 }

@@ -1,9 +1,9 @@
 .additional-product {
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid $background-greey-color;
 }
 
 .additional-product:last-child {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $background-greey-color;
 }
 
 .additional-product__title {
@@ -35,8 +35,8 @@
     justify-content: space-between;
     padding-right: 36px;
     padding-left: 37px;
-    border-right: 1px solid #f2f2f2;
-    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid $background-greey-color;
+    border-left: 1px solid $background-greey-color;
   }
 
   .additional-product__link {
@@ -46,7 +46,8 @@
   .additional-product__title {
     font-size: 20px;
     line-height: 20px;
-    max-width: 20%;
+    max-width: 21%;
+    color: $form-color-text;
   }
 
   .additional-product__price {
