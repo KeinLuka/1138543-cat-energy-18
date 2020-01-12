@@ -63,7 +63,7 @@
 
   .footer__academy {
     width: 23%;
-    padding-top: 0;
+    padding-top: 7px;
   }
 
   .footer__link {
@@ -75,7 +75,8 @@
 @media (min-width: $desctop-min-weight) {
   .footer {
     padding-bottom: 49px;
-    padding-top: 35px;
+    padding-top: 40px;
+    box-sizing: border-box;
   }
 
   .footer__academy {

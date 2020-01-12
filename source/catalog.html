@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preload" href="fonts/Oswald-Regular.woff" as="font">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -18,9 +18,15 @@
           alt="Логотип Cat energy">
       </a>
       <nav class="header-navigation main-navigation">
-        <button class="header-navigation__button header-navigation__button--close" type="button"
-          aria-label="Открыть меню"></button>
-        <ul class="main-navigation__list site-list">
+        <button class="header-navigation__button header-navigation__button--close" type="button" id="button"
+          aria-label="Открыть меню">
+          <div class="header-navigation__wrapper">
+            <div class="header-navigation__burger-top"></div>
+            <div class="header-navigation__burger-middle"></div class="header-navigation__burger-middle">
+            <div class="header-navigation__burger-bottom"></div class="header-navigation__burger-bottom">
+          </div>
+        </button>
+        <ul class="main-navigation__list site-list site-list--index">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a
               class="site-list__link site-list__link--active site-list__link--active-catalog">Каталог продукции</a></li>
@@ -41,7 +47,8 @@
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/chicken-small-tablet@1x.webp 1x , img/chicken-small-tablet@2x.webp 2x">
               <source type="image/webp" class="card__img"
-                srcset="img/chicken-small-mobile@1x.webp , img/chicken-small-mobile@2x.webp 2x" width="140" height="144" alt="До использования корма">
+                srcset="img/chicken-small-mobile@1x.webp , img/chicken-small-mobile@2x.webp 2x" width="140" height="144"
+                alt="До использования корма">
 
               <source media="(min-width: 1200px)"
                 srcset="img/chicken-small-desktop@1x.png 1x , img/chicken-small-desktop@2x.png 2x">
@@ -239,8 +246,8 @@
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/buckwheat-big-tablet@1x.webp 1x , img/buckwheat-big-tablet@2x.webp 2x">
               <source type="image/webp" class="card__img card__img--big"
-                srcset="img/buckwheat-big-mobile@1x.webp , img/buckwheat-big-mobile@2px.webp 2x" width="140" height="144"
-                alt="До использования корма">
+                srcset="img/buckwheat-big-mobile@1x.webp , img/buckwheat-big-mobile@2px.webp 2x" width="140"
+                height="144" alt="До использования корма">
 
               <source media="(min-width: 1200px)"
                 srcset="img/buckwheat-big-desktop@1x.png 1x , img/buckwheat-big-desktop@2x.png 2x">
@@ -378,7 +385,7 @@
           </div>
         </div>
       </div>
-      <div class="contacts__map">
+      <div class="contacts__map" id="map">
       </div>
     </section>
   </main>
@@ -401,6 +408,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c9065741-e2d1-49d1-8bb4-26f309a08f19&lang=ru_RU"></script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>

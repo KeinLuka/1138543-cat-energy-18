@@ -1,13 +1,17 @@
 var form = document.querySelector(".form");
-var submitFormButton = form.querySelector(".form__btn");
-var nameInput = form.querySelector("#name-cat");
-var weightInput = form.querySelector("#weight-cat");
-var mailInput = form.querySelector("#master__e-mail");
-var phoneInput = form.querySelector("#master__phone");
-var mailRegEx = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-var mailInputRegEx = /[А-я]/g;
-var numberRegEx = /[^\d]/g;
-form.noValidate = true;
+
+if (form) {
+  var submitFormButton = form.querySelector(".form__btn");
+  var nameInput = form.querySelector("#name-cat");
+  var weightInput = form.querySelector("#weight-cat");
+  var mailInput = form.querySelector("#master__e-mail");
+  var phoneInput = form.querySelector("#master__phone");
+  var mailRegEx = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  var mailInputRegEx = /[А-я]/g;
+  var numberRegEx = /[^\d]/g;
+  form.noValidate = true;
+}
+
 
 var testMail = function () {
   mailInput.value = mailInput.value.replace(mailInputRegEx, "");
@@ -98,8 +102,22 @@ var formSubmitHendler = function (evt) {
   }
 };
 
-nameInput.addEventListener("input", nameInputChangeHandler);
-weightInput.addEventListener("input", weightInputChangeHandler);
-mailInput.addEventListener("input", mailInputChangeHandler);
-phoneInput.addEventListener("input", phoneInputChangeHandler);
-form.addEventListener("submit", formSubmitHendler);
+if (nameInput) {
+  nameInput.addEventListener("input", nameInputChangeHandler);
+}
+
+if (weightInput) {
+  weightInput.addEventListener("input", weightInputChangeHandler);
+}
+
+if (mailInput) {
+  mailInput.addEventListener("input", mailInputChangeHandler);
+}
+
+if (phoneInput) {
+  phoneInput.addEventListener("input", phoneInputChangeHandler);
+}
+
+if (form) {
+  form.addEventListener("submit", formSubmitHendler);
+}

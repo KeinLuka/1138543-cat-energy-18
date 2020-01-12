@@ -15,19 +15,34 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+var terser = require("gulp-terser");
 
-gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+gulp.task("css", function() {
+  return gulp
+    .src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("build/css"));
+});
+
+gulp.task("index", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(plumber())
+    .pipe(concat("index.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(terser())
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("server", function () {
@@ -39,7 +54,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("css"));
+  gulp.watch("source/js/*.js", gulp.series("index", "refresh"));
+  gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("css", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
@@ -90,7 +106,6 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**",
      "source/img/**",
-     "source/js/**",
      "source/*.ico"
     ], {
       base: "source"
@@ -98,5 +113,5 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series( "clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series( "clean", "copy", "css", "sprite", "html", "index"));
 gulp.task("start", gulp.series("build", "server"));

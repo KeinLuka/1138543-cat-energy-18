@@ -79,17 +79,17 @@
     flex-direction: column;
     justify-content: flex-end;
     max-width: 1440px;
-    padding-bottom: 71px;
+    padding-bottom: 64px;
     margin: 0 auto;
   }
 
   .slider__slide {
     text-align: center;
-    top: 81px;
+    top: 88px;
     left: 7px;
     transform: translateX(0);
     overflow: hidden;
-    padding-bottom: 110px;
+    padding-bottom: 109px;
   }
 
   .slider__slide--before,
@@ -100,11 +100,11 @@
 
   .slider__slide--before {
     z-index: 1;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 26.5%, #f2f2f2 26.5%);
+    background: linear-gradient(to bottom,#ffffff 0,#ffffff 26.6%,#f2f2f2 26.6%);
   }
 
   .slider__slide--after {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 26.5%, #eaeaea 26.5%);
+    background: linear-gradient(to bottom,#ffffff 0,#ffffff 26.6%,#eaeaea 26.6%);
   }
 
   .slider__img--before,
