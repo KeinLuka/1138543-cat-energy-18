@@ -11,10 +11,19 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
+}
+
+.prize__svg {
+  position: absolute;
+  fill: #ffffff;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .prize__desc {
@@ -43,6 +52,11 @@
     }
   }
 
+  .prize__svg {
+    left: 13%;
+    transform: translateX(0);
+  }
+
   .prize__desc {
     margin: 0;
     width: 28%;
@@ -64,6 +78,11 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .prize__svg {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .prize__desc {
