@@ -1,5 +1,14 @@
 var sliderInputRange = document.querySelector("#range-slider");
 var sliderImageBefore = document.querySelector(".slider__slide--before");
+var setBreakpoint = function () {
+  if (window.innerWidth > 768 && window.innerWidth < 1300) {
+    sliderInputRange.value = 50;
+    sliderImageBefore.style.width = sliderInputRange.value + "%";
+  } else {
+    sliderInputRange.value = 50;
+    sliderImageBefore.style.width = sliderInputRange.value + "%";
+  }
+};
 
 if (sliderInputRange && sliderImageBefore) {
   var hiddenImage = function () {
@@ -9,21 +18,5 @@ if (sliderInputRange && sliderImageBefore) {
   hiddenImage();
 
   sliderInputRange.addEventListener("input", hiddenImage);
+  window.addEventListener("resize", setBreakpoint);
 }
-
-var setBreakpoint = function () {
-  if (window.innerWidth >= 768) {
-    sliderInputRange.value = 51;
-    sliderImageBefore.style.width = 49 + "%";
-  }
-  if (window.innerWidth >= 1300) {
-    sliderInputRange.value = 51;
-    sliderImageBefore.style.width = 51 + "%";
-  }
-};
-
-setBreakpoint();
-
-window.addEventListener("resize", function () {
-  setBreakpoint();
-});
