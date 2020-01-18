@@ -1,5 +1,22 @@
 .main-navigation {
   background-color: #ffffff;
+  padding-top: 19px;
+  min-width: 100%;
+}
+
+.main-navigation__list--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .main-navigation {
+    min-width: 300px;
+    padding-top: 0;
+  }
+
+  .main-navigation__list--hidden {
+    display: flex;
+  }
 }
 
 @media (min-width: $desctop-min-weight) {

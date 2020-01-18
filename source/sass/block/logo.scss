@@ -1,11 +1,69 @@
 .logo {
   background-color: transparent;
+  z-index: 1;
 }
 
 .logo--header {
   min-width: 100px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo--index {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .logo--footer {
   min-width: 150px;
+  padding-bottom: 27px;
+  padding-left: 21px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__mobile {
+  width: 192px;
+  height: 40px;
+  position: relative;
+  top: -11px;
+}
+
+@media (min-width: $tablet-min-weight) {
+  .logo__mobile {
+    width: 171px;
+    height: 58px;
+    position: relative;
+    top: -18px;
+  }
+
+  .logo--footer {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desctop-min-weight) {
+  .logo__mobile {
+    width: 202px;
+    height: 60px;
+    position: relative;
+    top: -18px;
+  }
 }

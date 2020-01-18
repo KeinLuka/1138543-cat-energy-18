@@ -1,10 +1,19 @@
 .card {
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background-color: #ededed;
+    top: 0;
+  }
 }
 
 .card__wrapper {
@@ -67,6 +76,11 @@
     margin-bottom: 3px;
     padding-left: 5.3%;
     padding-right: 5.1%;
+
+    &::after {
+      content: "";
+      display: none;
+    }
   }
 
   .card__wrapper {
