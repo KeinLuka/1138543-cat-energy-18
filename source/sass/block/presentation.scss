@@ -44,7 +44,7 @@
   .presentation {
     background: linear-gradient(to left, #eaeaea 0%, #eaeaea 50%, $background-greey-color 50%);
     box-sizing: border-box;
-    padding-top: 22px;
+    padding-top: 41px;
     padding-bottom: 7px;
   }
 
@@ -52,6 +52,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 616px;
+      background-color: #fff;
+      top: -41px;
+      left: 0;
+      z-index: 0;
+    }
   }
 
   .presentation__wrapper-desc {
@@ -105,20 +117,25 @@
 @media (min-width: $desctop-min-weight) {
   .presentation {
     background: linear-gradient(#f2f2f2);
+    padding-top: 21px;
     padding-bottom: 69px;
   }
 
   .presentation__wrapper {
     position: relative;
 
+    &::after {
+      content: none;
+    }
+
     &::before {
       content: "";
       position: absolute;
       width: 100vw;
-      height: 461px;
+      height: 481px;
       background: #eaeaea;
       left: 50%;
-      top: 134px;
+      top: 135px
     }
   }
 

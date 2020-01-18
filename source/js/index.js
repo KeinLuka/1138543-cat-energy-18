@@ -10,3 +10,20 @@ if (sliderInputRange && sliderImageBefore) {
 
   sliderInputRange.addEventListener("input", hiddenImage);
 }
+
+var setBreakpoint = function () {
+  if (window.innerWidth >= 768) {
+    sliderInputRange.value = 51;
+    sliderImageBefore.style.width = 49 + "%";
+  }
+  if (window.innerWidth >= 1300) {
+    sliderInputRange.value = 51;
+    sliderImageBefore.style.width = 51 + "%";
+  }
+};
+
+setBreakpoint();
+
+window.addEventListener("resize", function () {
+  setBreakpoint();
+});

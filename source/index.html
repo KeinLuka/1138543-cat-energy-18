@@ -11,10 +11,17 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/svg/sprite.svg"></include>
+  </div>
   <header class="header header--main">
     <div class="header__wrapper container">
-      <a href="#" class="header__logo logo logo--header" aria-label="Компания Cat energy">
-        <img class="logo__img" src="img/logo-mobile-header.svg" width="110" height="25" alt="Логотип Cat energy">
+      <a class="header__logo logo logo--index logo--header" aria-label="Компания Cat energy">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+          <img class="logo__mobile" src="img/svg/logo-mobile.svg" width="226" height="30" alt="Логотип кет энерджи">
+        </picture>
       </a>
       <nav class="header-navigation main-navigation">
         <button class="header-navigation__button header-navigation__button--close" id="button" type="button"
@@ -52,7 +59,10 @@
       <ul class="category__list">
         <li class="category__item">
           <div class="category__wrapper">
-            <h2 class="category__title"><span class="category__slim">Похудение</span></h2>
+            <svg class="category__svg category__svg--slim" width="35" height="49">
+              <use xlink:href="img/svg/sprite.svg#icon-cat-slim"></use>
+            </svg>
+            <h2 class="category__title category__title--slim"><span class="category__slim">Похудение</span></h2>
             <p class="category__desc category__desc--slim">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
@@ -62,6 +72,9 @@
         </li>
         <li class="category__item">
           <div class="category__wrapper">
+            <svg class="category__svg category__svg--pro" width="67" height="28">
+              <use xlink:href="img/svg/sprite.svg#icon-cat-pro"></use>
+            </svg>
             <h2 class="category__title"><span class="category__set">Набор массы</span></h2>
             <p class="category__desc">
               Заработать авторитет среди дворовых котов и даже собак?
@@ -123,31 +136,36 @@
           <div class="slider__slide slider__slide--before">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/before-desktop@1x.webp 1x , img/before-desktop@2x.webp 2x">
+                srcset="img/content__image/before-desktop@1x.webp 1x , img/content__image/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/before-tablet@1x.webp 1x , img/before-tablet@2x.webp 2x">
-              <source type="image/webp" class="slider__img slider__img--before" src="img/before-mobile@1x.webp"
-                srcset="img/before-mobile@2x.webp 2x" width="311" height="232" alt="До использования корма">
+                srcset="img/content__image/before-tablet@1x.webp 1x , img/content__image/before-tablet@2x.webp 2x">
+              <source type="image/webp" class="slider__img slider__img--before"
+                src="img/content__image/before-mobile@1x.webp" srcset="img/content__image/before-mobile@2x.webp 2x"
+                width="311" height="232" alt="До использования корма">
 
               <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x , img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x , img/before-tablet@2x.png 2x">
               <img class="slider__img slider__img--before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="До использования корма">
+                srcset="img/before-mobile@2x.png 2x" width="311" height="240" alt="До использования корма">
             </picture>
           </div>
           <div class="slider__slide slider__slide--after">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/after-desktop@1x.webp 1x , img/after-desktop@2x.webp 2x">
+                srcset="img/content__image/after-desktop@1x.webp 1x , img/content__image/after-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.webp 1x , img/after-tablet@2x.webp 2x">
+                srcset="img/content__image/after-tablet@1x.webp 1x , img/content__image/after-tablet@2x.webp 2x">
               <source type="image/webp" class="slider__img slider__img--after" src="img/after-mobile@1x.webp"
-                srcset="img/after-mobile@2x.webp 2x" width="251" height="240" alt="После использования корма">
+                srcset="img/content__image/after-mobile@2x.webp 2x" width="251" height="240"
+                alt="После использования корма">
 
-              <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x , img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x , img/after-tablet@2x.png 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/content__image/after-desktop@1x.png 1x , img/content__image/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content__image/after-tablet@1x.png 1x , img/content__image/after-tablet@2x.png 2x">
               <img class="slider__img slider__img--after" src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="После использования корма">
+                srcset="img/content__image/after-mobile@2x.png 2x" width="251" height="240"
+                alt="После использования корма">
             </picture>
           </div>
           <div class="slider__controls">
@@ -183,20 +201,41 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a href="#" class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="144" height="38"
-          alt="Логотип Cat energy">
+      <a class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
+        <svg class="logo__img" width="128" height="24">
+          <use xlink:href="img/svg/sprite.svg#icon-logo-footer"></use>
+        </svg>
       </a>
       <ul class="footer__social social">
-        <li class="social__item"><a href="#" class="social__link social__link--vk" aria-label="Ссылка на вк"></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--inst"
-            aria-label="Ссылка на инстаграмм"></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--fb" aria-label="Ссылка на фейсбук"></a>
+        <li class="social__item social__item--vk">
+          <a href="#" class="social__link social__link--vk" aria-label="Ссылка на вк">
+            <svg class="social__icon social__icon--vk" width="22" height="12">
+              <use xlink:href="img/svg/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--inst">
+          <a href="#" class="social__link social__link--inst" aria-label="Ссылка на инстаграмм">
+            <svg class="social__icon social__icon--inst" width="16" height="16">
+              <use xlink:href="img/svg/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="#" class="social__link social__link--fb" aria-label="Ссылка на фейсбук">
+            <svg class="social__icon social__icon--fb" width="10" height="19">
+              <use xlink:href="img/svg/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="footer__academy">
         <a href="https://htmlacademy.ru/" class="footer__link">HTML Academy</a>
-        <a href="mailto:mail@htmlacademy.ru" class="footer__mail" aria-label="Почта HTML Academy"></a>
+        <a href="mailto:mail@htmlacademy.ru" class="footer__mail" aria-label="Почта HTML Academy">
+          <svg class="footer__svg" width="37" height="44">
+            <use xlink:href="img/svg/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

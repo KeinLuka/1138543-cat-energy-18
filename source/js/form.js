@@ -5,7 +5,9 @@ if (form) {
   var nameInput = form.querySelector("#name-cat");
   var weightInput = form.querySelector("#weight-cat");
   var mailInput = form.querySelector("#master__e-mail");
+  var svgMailInput = form.querySelector(".form__master-svg--mail");
   var phoneInput = form.querySelector("#master__phone");
+  var svgPhoneInput = form.querySelector(".form__master-svg--phone");
   var mailRegEx = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   var mailInputRegEx = /[А-я]/g;
   var numberRegEx = /[^\d]/g;
@@ -40,11 +42,17 @@ var weightInputChangeHandler = function (evt) {
 
 var mailInputChangeHandler = function (evt) {
   removeErrorStyle(evt);
+  svgMailInput.style.fill = "#68b738";
   testMail();
+};
+
+var mailInputBlurHandler = function (evt) {
+  svgMailInput.style.fill = null;
 };
 
 var phoneInputChangeHandler = function (evt) {
   removeErrorStyle(evt);
+  svgPhoneInput.style.fill = "#68b738";
   testPhone();
 };
 
@@ -82,16 +90,18 @@ var checkPhoneInputValidity = function () {
 
 var checkInputsValidity = function () {
   if (!checkNameInputValidity()) {
-    nameInput.style.boxShadow = "0 0 3px red";
+    nameInput.style.boxShadow = "0 0 3px #ff8282";
   }
   if (!checkWeightInputValidity()) {
-    weightInput.style.boxShadow = "0 0 3px red";
+    weightInput.style.boxShadow = "0 0 3px #ff8282";
   }
   if (!checkMailInputValidity()) {
-    mailInput.style.boxShadow = "0 0 3px red";
+    mailInput.style.boxShadow = "0 0 3px #ff8282";
+    svgMailInput.style.fill = "#ff8282";
   }
   if (!checkPhoneInputValidity()) {
-    phoneInput.style.boxShadow = "0 0 3px red";
+    phoneInput.style.boxShadow = "0 0 3px #ff8282";
+    svgPhoneInput.style.fill = "#ff8282";
   }
 };
 
@@ -112,6 +122,7 @@ if (weightInput) {
 
 if (mailInput) {
   mailInput.addEventListener("input", mailInputChangeHandler);
+  mailInput.addEventListener("blur", mailInputBlurHandler);
 }
 
 if (phoneInput) {

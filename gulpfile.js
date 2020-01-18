@@ -84,18 +84,18 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/content__image/*.{png,jpg}')
       .pipe(webp({quality: 90}))
-      .pipe(gulp.dest('source/img'));
+      .pipe(gulp.dest('source/img/content__image'));
 });
 
 gulp.task("sprite", function () {
-  return gulp.src('source/img/icon-*.svg')
+  return gulp.src('source/img/svg/icon-*.svg')
       .pipe(svgstore({
         inlineSvg: true
       }))
       .pipe(rename("sprite.svg"))
-      .pipe(gulp.dest("build/img"));
+      .pipe(gulp.dest("build/img/svg"));
 });
 
 gulp.task("clean", function() {

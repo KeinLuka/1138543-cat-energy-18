@@ -1,13 +1,30 @@
 .extra {
-  padding-top: 26px;
+  padding-top: 25px;
   box-sizing: border-box;
   padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 .extra__title {
   @include title-style-none;
   font-weight: normal;
   margin-bottom: 31px;
+  position: relative;
+  width: auto;
+  display: flex;
+  align-self: flex-start;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    transform: translate(100%);
+    height: 3px;
+    top: 16px;
+    right: 33px;
+    background-color: #68b738;
+  }
 }
 
 .extra__list {
@@ -44,20 +61,15 @@
       width: 100vw;
       transform: translate(-100%);
       height: 3px;
-      top: 19px;
+      top: 21px;
       left: -40px;
       background-color: #68b738;
     }
 
     &::after {
       content: "";
-      position: absolute;
-      width: 100vw;
-      transform: translate(100%);
-      height: 3px;
-      top: 19px;
+      top: 21px;
       right: -35px;
-      background-color: #68b738;
     }
   }
 
@@ -78,7 +90,7 @@
 @media (min-width: $desctop-min-weight) {
   .extra {
     padding-top: 69px;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 87px;

@@ -11,11 +11,17 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/svg/sprite.svg"></include>
+  </div>
   <header class="header header--catalog">
     <div class="header__wrapper container">
-      <a href="#" class="header__logo logo logo--header" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="110" height="25"
-          alt="Логотип Cat energy">
+      <a href="index.html" class="header__logo logo logo--header" aria-label="Компания Cat energy">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+          <img class="logo__mobile" src="img/svg/logo-mobile.svg" width="226" height="30" alt="Логотип кет энерджи">
+        </picture>
       </a>
       <nav class="header-navigation main-navigation">
         <button class="header-navigation__button header-navigation__button--close" type="button" id="button"
@@ -63,7 +69,7 @@
               <label class="form__program-label" for="losing-weight">Похудение</label>
             </li>
             <li class="form__program-item">
-              <input class="form__program-input" name="program" id="set" type="radio" value="set-mass" disabled="">
+              <input class="form__program-input" name="program" id="set" type="radio" value="set-mass">
               <label class="form__program-label" for="set">Набор массы</label>
             </li>
             <li class="form__program-item">
@@ -78,10 +84,16 @@
             <li class="form__master-item">
               <label class="form__master-label" for="master__e-mail">E-mail:*</label>
               <input class="form__master-input" name="master__e-mail" id="master__e-mail" type="email" required="">
+              <svg class="form__master-svg form__master-svg--mail" width="17" height="13">
+                <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
+              </svg>
             </li>
             <li class="form__master-item">
               <label class="form__master-label" for="master__phone">Телефон:*</label>
               <input class="form__master-input number" name="master__phone" id="master__phone" type="tel" required="">
+              <svg class="form__master-svg form__master-svg--phone" width="20" height="20">
+                <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -100,7 +112,7 @@
               <label class="form__extra-label" for="sugar-substitute">Сахарозаменитель</label>
             </li>
             <li class="form__extra-item">
-              <input class="form__extra-input" name="water" id="water" type="checkbox" value="water" disabled="">
+              <input class="form__extra-input" name="water" id="water" type="checkbox" value="water">
               <label class="form__extra-label" for="water">Питьевая вода</label>
             </li>
             <li class="form__extra-item">
@@ -142,20 +154,41 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a href="#" class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
-        <img class="logo__img" src="https://via.placeholder.com/150x150" width="144" height="38"
-          alt="Логотип Cat energy">
+      <a href="index.html" class="footer__logo logo logo--footer" aria-label="Компания Cat energy">
+        <svg class="logo__img" width="128" height="24">
+          <use xlink:href="img/svg/sprite.svg#icon-logo-footer"></use>
+        </svg>
       </a>
       <ul class="footer__social social">
-        <li class="social__item"><a href="#" class="social__link social__link--vk" aria-label="Ссылка на вк"></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--inst"
-            aria-label="Ссылка на инстаграмм"></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--fb" aria-label="Ссылка на фейсбук"></a>
+        <li class="social__item social__item--vk">
+          <a href="#" class="social__link social__link--vk" aria-label="Ссылка на вк">
+            <svg class="social__icon social__icon--vk" width="22" height="12">
+              <use xlink:href="img/svg/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--inst">
+          <a href="#" class="social__link social__link--inst" aria-label="Ссылка на инстаграмм">
+            <svg class="social__icon social__icon--inst" width="16" height="16">
+              <use xlink:href="img/svg/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="#" class="social__link social__link--fb" aria-label="Ссылка на фейсбук">
+            <svg class="social__icon social__icon--fb" width="10" height="19">
+              <use xlink:href="img/svg/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <div class="footer__academy">
         <a href="https://htmlacademy.ru/" class="footer__link">HTML Academy</a>
-        <a href="mailto:mail@htmlacademy.ru" class="footer__mail" aria-label="Почта HTML Academy"></a>
+        <a href="mailto:mail@htmlacademy.ru" class="footer__mail" aria-label="Почта HTML Academy">
+          <svg class="footer__svg" width="37" height="44">
+            <use xlink:href="img/svg/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

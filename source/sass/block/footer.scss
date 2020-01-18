@@ -1,7 +1,7 @@
 .footer {
   background-color: $background-greey-color;
   padding-bottom: 35px;
-  padding-top: 32px;
+  padding-top: 37px;
 }
 
 .footer__wrapper {
@@ -11,23 +11,15 @@
 }
 
 .footer__social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  margin-top: 14px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  width: 100%;
 }
 
 .footer__academy {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 22px;
   width: 100%;
 }
 
@@ -37,16 +29,35 @@
   line-height: 16px;
   color: $additional-color-text;
   text-decoration: none;
+  padding-top: 9px;
+}
+
+.footer__svg {
+  padding: 0;
+  margin-right: -7px;
+  width: 41px;
+  height: 46px;
+  color: #666666;
+
+  &:hover {
+    color: $background-green-color;
+  }
+
+  &:active {
+    color: $background-green-color;
+    opacity: 0.3;
+  }
 }
 
 .footer__mail {
   position: relative;
+  top: -5px;
 }
 
 @media (min-width: $tablet-min-weight) {
   .footer {
     padding-bottom: 47px;
-    padding-top: 37px;
+    padding-top: 50px;
   }
 
   .footer__wrapper {
@@ -75,7 +86,7 @@
 @media (min-width: $desctop-min-weight) {
   .footer {
     padding-bottom: 49px;
-    padding-top: 40px;
+    padding-top: 50px;
     box-sizing: border-box;
   }
 
