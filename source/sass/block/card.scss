@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .card__wrapper {
@@ -13,16 +14,17 @@
 }
 
 .card__img {
-  width: 140px;
-  height: 122px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
 }
 
 .card__wrapper-table {
-  width: 100%;
+  width: 50%;
 }
 
 .card__title {
-  @include title-style-none();
+  @include title-style-none;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
@@ -48,6 +50,7 @@
 }
 
 .card__link {
+  margin-top: 23px;
   min-width: 240px;
   min-height: 40px;
   width: 100%;
@@ -75,8 +78,17 @@
 
   .card__img {
     position: absolute;
-    top: -172px;
-    left: center;
+    top: -207px;
+    z-index: 0;
+    left: 49.5%;
+    transform: translateX(-50%);
+    width: 317px;
+    height: 170px;
+  }
+
+  .card__img--big {
+    height: 208px;
+    top: -244px;
   }
 
   .card__wrapper-table {
@@ -86,6 +98,7 @@
     align-items: center;
     padding-left: 38px;
     padding-right: 38px;
+    width: 100%;
   }
 
   .card__title {
@@ -120,8 +133,12 @@
     padding-left: 3%;
     padding-right: 3%;
     margin-right: 6.65%;
-    margin-top: 135px;
+    margin-top: 134px;
     margin-bottom: 8px;
+  }
+
+  .card__img {
+    width: 242px;
   }
 
   .card:nth-child(4n) {

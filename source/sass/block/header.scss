@@ -12,16 +12,21 @@
     width: 100%;
     min-height: 305px;
     background-color: #64a83b;
-    background-image: url("../img/intro-mobile.png");
+    background-image: url("../img/intro-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     z-index: -1;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
 .header--catalog {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $background-greey-color;
   padding-bottom: 19px;
 }
 
@@ -77,6 +82,13 @@
       right: 0;
       width: 50%;
       height: 696px;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-position-x: left;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 }

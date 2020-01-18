@@ -14,16 +14,71 @@
 
 .btn--green {
   color: #ffffff;
-  background-color: #68b738;
+  background-color: $background-green-color;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .btn--grey {
-  background-color: #f2f2f2;
+  background-color: $background-greey-color;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(27%, 27%, 27%, 0.3);
+  }
 }
 
 .btn--transparent {
-  color: #000000;
+  color: $additional-color-text;
   background-color: transparent;
+  position: relative;
+  max-width: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/right-arrow-long.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 11px;
+    left: 131px;
+    top: 50%;
+    transform: translateY(-64%);
+  }
+
+  &:hover {
+    &::before {
+      content: "";
+      width: 33px;
+      height: 11px;
+      background-image: url("../img/right-arrow-verylong.png");
+      transition: 0.5s;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.btn--set {
+  &::before {
+    content: "";
+    left: 125px;
+    top: 52%;
+    transform: translateY(-64%);
+  }
 }
 
 @media (min-width: $tablet-min-weight) {

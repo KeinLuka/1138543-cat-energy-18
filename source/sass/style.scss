@@ -4,6 +4,7 @@
 @import "btn";
 @import "mixin";
 @import "font";
+@import "block/main";
 @import "block/header";
 @import "block/main-navigation";
 @import "block/site-list";
@@ -25,3 +26,6 @@
 @import "block/extra";
 @import "block/additional-product";
 @import "block/prize";
+/*Форма*/
+@import "block/questionnaire";
+@import "block/form";
