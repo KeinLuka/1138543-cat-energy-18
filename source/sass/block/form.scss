@@ -59,7 +59,7 @@
   overflow: hidden;
 }
 
-.form__program-input+.form__program-label::before {
+.form__program-input + .form__program-label::before {
   content: "";
   position: absolute;
   top: -3px;
@@ -70,7 +70,7 @@
   border-radius: 50%;
 }
 
-.form__program-input:checked+.form__program-label::after {
+.form__program-input:checked + .form__program-label::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -201,7 +201,7 @@
   overflow: hidden;
 }
 
-.form__extra-input+.form__extra-label::before {
+.form__extra-input + .form__extra-label::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -211,7 +211,7 @@
   border: 1px solid #cecece;
 }
 
-.form__extra-input:checked+.form__extra-label::after {
+.form__extra-input:checked + .form__extra-label::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -306,7 +306,7 @@
     margin-bottom: 0;
   }
 
-  .form__program-input+.form__program-label::before {
+  .form__program-input + .form__program-label::before {
     content: "";
     position: absolute;
     top: -4px;
@@ -315,7 +315,7 @@
     height: 39px;
   }
 
-  .form__program-input:checked+.form__program-label::after {
+  .form__program-input:checked + .form__program-label::after {
     content: "";
     position: absolute;
     width: 18px;
@@ -430,7 +430,7 @@
     margin-left: 16%;
   }
 
-  .form__extra-input+.form__extra-label::before {
+  .form__extra-input + .form__extra-label::before {
     content: "";
     top: 6px;
     left: 1px;
@@ -438,7 +438,7 @@
     height: 39px;
   }
 
-  .form__extra-input:checked+.form__extra-label::after {
+  .form__extra-input:checked + .form__extra-label::after {
     content: "";
     top: 18px;
     left: 11px;
@@ -582,7 +582,6 @@
   .form__master,
   .form__comment,
   .form__extra {
-
     h3 {
       &::before {
         content: "";
@@ -604,11 +603,6 @@
     &:hover {
       box-shadow: 0 0 0 1px #cdcdcd;
     }
-  }
-
-  .form__comment-text,
-  .form__date-cat-input,
-  .form__master-input {
 
     &:active,
     &:focus {
@@ -617,17 +611,17 @@
     }
   }
 
-  .form__program-input:hover+.form__program-label::before {
+  .form__program-input:hover + .form__program-label::before {
     content: "";
     border-color: #bcbcbc;
   }
 
-  .form__program-input:focus+.form__program-label::before {
+  .form__program-input:focus + .form__program-label::before {
     content: "";
     border-color: grey;
   }
 
-  .form__program-input:disabled+.form__program-label {
+  .form__program-input:disabled + .form__program-label {
     cursor: not-allowed;
     opacity: 0.3;
 
@@ -636,17 +630,17 @@
     }
   }
 
-  .form__extra-input:hover+.form__extra-label::before {
+  .form__extra-input:hover + .form__extra-label::before {
     content: "";
     border-color: #bcbcbc;
   }
 
-  .form__extra-input:focus+.form__extra-label::before {
+  .form__extra-input:focus + .form__extra-label::before {
     content: "";
     border-color: grey;
   }
 
-  .form__extra-input:disabled+.form__extra-label {
+  .form__extra-input:disabled + .form__extra-label {
     cursor: not-allowed;
     opacity: 0.3;
 
