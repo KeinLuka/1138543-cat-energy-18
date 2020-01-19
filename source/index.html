@@ -26,11 +26,11 @@
       <nav class="header-navigation main-navigation">
         <button class="header-navigation__button header-navigation__button--close" id="button" type="button"
           aria-label="Открыть меню">
-          <div class="header-navigation__wrapper">
-            <div class="header-navigation__burger-top"></div>
-            <div class="header-navigation__burger-middle"></div class="header-navigation__burger-middle">
-            <div class="header-navigation__burger-bottom"></div class="header-navigation__burger-bottom">
-          </div>
+          <span class="header-navigation__wrapper">
+            <span class="header-navigation__burger-top"></span>
+            <span class="header-navigation__burger-middle"></span>
+            <span class="header-navigation__burger-bottom"></span>
+          </span>
         </button>
         <ul class="main-navigation__list site-list site-list--index">
           <li class="site-list__item"><a
@@ -139,14 +139,12 @@
                 srcset="img/content__image/before-desktop@1x.webp 1x , img/content__image/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/content__image/before-tablet@1x.webp 1x , img/content__image/before-tablet@2x.webp 2x">
-              <source type="image/webp" class="slider__img slider__img--before"
-                src="img/content__image/before-mobile@1x.webp" srcset="img/content__image/before-mobile@2x.webp 2x"
-                width="311" height="232" alt="До использования корма">
+              <source type="image/webp" srcset="img/content__image/before-mobile@1x.webp 1x , img/content__image/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x , img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x , img/before-tablet@2x.png 2x">
-              <img class="slider__img slider__img--before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" width="311" height="240" alt="До использования корма">
+              <source media="(min-width: 1200px)" srcset="img/content__image/before-desktop@1x.png 1x , img/content__image/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/content__image/before-tablet@1x.png 1x , img/content__image/before-tablet@2x.png 2x">
+              <img class="slider__img slider__img--before" src="img/content__image/before-mobile@1x.png"
+                srcset="img/content__image/before-mobile@2x.png 2x" width="311" height="240" alt="До использования корма">
             </picture>
           </div>
           <div class="slider__slide slider__slide--after">
@@ -155,15 +153,13 @@
                 srcset="img/content__image/after-desktop@1x.webp 1x , img/content__image/after-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/content__image/after-tablet@1x.webp 1x , img/content__image/after-tablet@2x.webp 2x">
-              <source type="image/webp" class="slider__img slider__img--after" src="img/after-mobile@1x.webp"
-                srcset="img/content__image/after-mobile@2x.webp 2x" width="251" height="240"
-                alt="После использования корма">
+              <source type="image/webp" srcset="img/content__image/after-mobile@1x.webp 1x , img/content__image/after-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)"
                 srcset="img/content__image/after-desktop@1x.png 1x , img/content__image/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
                 srcset="img/content__image/after-tablet@1x.png 1x , img/content__image/after-tablet@2x.png 2x">
-              <img class="slider__img slider__img--after" src="img/after-mobile@1x.png"
+              <img class="slider__img slider__img--after" src="img/content__image/after-mobile@1x.png"
                 srcset="img/content__image/after-mobile@2x.png 2x" width="251" height="240"
                 alt="После использования корма">
             </picture>
@@ -245,4 +241,3 @@
 </body>
 
 </html>
-
