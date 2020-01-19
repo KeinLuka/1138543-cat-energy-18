@@ -59,7 +59,7 @@
       position: absolute;
       width: 100vw;
       height: 616px;
-      background-color: #fff;
+      background-color: #ffffff;
       top: -41px;
       left: 0;
       z-index: 0;
@@ -122,10 +122,16 @@
   }
 
   .presentation__wrapper {
-    position: relative;
-
     &::after {
-      content: none;
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 156px;
+      background-color: #ffffff;
+      z-index: 0;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &::before {
@@ -135,7 +141,7 @@
       height: 481px;
       background: #eaeaea;
       left: 50%;
-      top: 135px
+      top: 135px;
     }
   }
 
@@ -157,7 +163,7 @@
   .presentation__cost {
     padding-top: 49px;
     width: 100%;
-    text-align-last: left;
+    text-align: left;
   }
 
   .presentation__cost span {
