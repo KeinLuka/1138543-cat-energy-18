@@ -21,6 +21,9 @@
 
 @media (min-width: $desctop-min-weight) {
   .main-navigation {
+    width: 50%;
     background-color: transparent;
+    box-sizing: border-box;
+    padding-left: 66px;
   }
 }

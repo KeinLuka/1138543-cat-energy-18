@@ -385,6 +385,9 @@
 
   .form__master-item {
     margin-bottom: 19px;
+    input:focus + svg {
+      fill: #68b738;
+    }
   }
 
   .form__master-input {
@@ -621,6 +624,10 @@
     border-color: grey;
   }
 
+  .form__program-input:active + .form__program-label {
+    opacity: 0.3;
+  }
+
   .form__program-input:disabled + .form__program-label {
     cursor: not-allowed;
     opacity: 0.3;
@@ -638,6 +645,10 @@
   .form__extra-input:focus + .form__extra-label::before {
     content: "";
     border-color: grey;
+  }
+
+  .form__extra-input:active + .form__extra-label {
+    opacity: 0.3;
   }
 
   .form__extra-input:disabled + .form__extra-label {

@@ -121,7 +121,7 @@
 
   .slider__controls {
     min-width: 540px;
-    padding-top: 20px;
+    padding-top: 15px;
     margin: 0;
     margin-left: 8.5%;
     margin-right: 8.7%;
@@ -233,6 +233,9 @@
 
   .slider__text {
     font-size: 21px;
+    box-sizing: border-box;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
   }
 }
 
@@ -264,6 +267,15 @@
 
     &::before {
       content: none;
+    }
+  }
+
+  .slider__text {
+    &:hover {
+      border-bottom: 1px solid #bebebe;
+    }
+    &:active {
+      border-bottom: none;
     }
   }
 

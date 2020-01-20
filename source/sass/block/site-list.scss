@@ -49,7 +49,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     min-width: 505px;
     padding-left: 65px;
     box-sizing: border-box;
@@ -93,6 +92,7 @@
   .site-list__item {
     border: none;
     padding: 0;
+    margin-right: 8%;
 
     &::before {
       display: none;
@@ -101,14 +101,13 @@
 
   .site-list__item:last-child {
     border-bottom: none;
+    margin-right: 0;
   }
 }
 
 
 @media (min-width: $desctop-min-weight) {
   .site-list {
-    padding-left: 0;
-    min-width: 478px;
     font-size: 20px;
   }
 
@@ -138,5 +137,11 @@
 
   .site-list__link--index {
     color: #ffffff;
+  }
+
+  .site-list__item {
+    margin-right: 7%;
+    box-sizing: border-box;
+    padding-bottom: 11px;
   }
 }

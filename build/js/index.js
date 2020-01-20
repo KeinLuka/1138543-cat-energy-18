@@ -169,18 +169,18 @@ var zooms = {
 var mapBlock = document.querySelector(".map");
 var breakpoint;
 var setBreakpoint = function () {
-  breakpoint = 'mobile';
+  breakpoint = "mobile";
   if (window.innerWidth >= 768) {
-    breakpoint = 'tablet';
+    breakpoint = "tablet";
   }
   if (window.innerWidth >= 1300) {
-    breakpoint = 'desktop';
+    breakpoint = "desktop";
   }
 };
 setBreakpoint();
 
 window.ymaps.ready(function () {
-  var map = new window.ymaps.Map(`map`, {
+  var map = new window.ymaps.Map("map", {
     center: centers[breakpoint],
     controls: [],
     zoom: zooms[breakpoint]
@@ -189,8 +189,8 @@ window.ymaps.ready(function () {
   var placemark = new ymaps.Placemark([59.938631, 30.323055], {
     hintContent: "наш магазин"
   }, {
-    iconLayout: `default#image`,
-    iconImageHref: `img/map-pin.png`,
+    iconLayout: "default#image",
+    iconImageHref: "img/map-pin.png",
     iconImageSize: [113, 106],
     iconImageOffset: [-53, -120]
     });

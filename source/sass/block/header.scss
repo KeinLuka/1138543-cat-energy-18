@@ -46,6 +46,7 @@
   .header {
     padding-top: 72px;
     overflow: visible;
+    padding-bottom: 35px;
   }
 
   .header--main {
@@ -67,5 +68,9 @@
         background-size: 720px auto;
       }
     }
+  }
+
+  .header__logo {
+    margin-bottom: 9px;
   }
 }
