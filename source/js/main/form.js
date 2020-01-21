@@ -56,6 +56,10 @@ var phoneInputChangeHandler = function (evt) {
   testPhone();
 };
 
+var phoneInputChangeHandler = function (evt) {
+  svgPhoneInput.style.fill = null;
+};
+
 var checkNameInputValidity = function () {
   var flag = true;
   if (nameInput.value === "") {
@@ -127,6 +131,7 @@ if (mailInput) {
 
 if (phoneInput) {
   phoneInput.addEventListener("input", phoneInputChangeHandler);
+  phoneInput.addEventListener("blur", phoneInputChangeHandler);
 }
 
 if (form) {
